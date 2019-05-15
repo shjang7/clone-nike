@@ -1,0 +1,21 @@
+@import "_reset";
+@import "_media";
+@import "_display";
+@import "./Layout/_grid.scss";
+@import "_color.scss";
+
+.sample-bg-1 {
+  background-color: #03e;
+}
+
+.sample-bg-2 {
+  background-color: #f3e;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.sample-h {
+  height: 20rem;
+}

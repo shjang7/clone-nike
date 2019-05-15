@@ -1,0 +1,14 @@
+
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-md-row {
+  @include screen-only(md) {
+    flex-direction: row;
+  }
+}
