@@ -1,2 +1,3 @@
 # clone-nike
-An Odin Project to clon Nike.com in 2019
+
+An Odin Project to clone Nike.com in 2019.
