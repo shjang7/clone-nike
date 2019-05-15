@@ -1,4 +1,3 @@
-
 .d-flex {
   display: flex;
 }
@@ -11,4 +10,8 @@
   @include screen-only(md) {
     flex-direction: row;
   }
+}
+
+.jusitify-content-between {
+  justify-content: space-between;
 }
