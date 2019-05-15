@@ -7,8 +7,15 @@
 }
 
 [class*=col-] {
-  padding-left: $gutter*1rem;
-  padding-right: $gutter*1rem;
+//  padding-left: $gutter*1rem;
+//  padding-right: $gutter*1rem;
+}
+
+.no-gutter {
+  [class*=col-] {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 @for $i from 1 through 12 {

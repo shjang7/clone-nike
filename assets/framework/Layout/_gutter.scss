@@ -1,4 +1,4 @@
-$gutter: 1;
+$gutter: 0.5;
 
 @for $i from 0 through 5 {
   .px-#{$i} {
