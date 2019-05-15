@@ -1,24 +1,26 @@
-@import url("https://fonts.googleapis.com/css?family=PT+Sans+Narrow:700|Raleway:300,400,500,700,800");
+@import url("https://fonts.googleapis.com/css?family=PT+Sans+Narrow:700|Raleway:300,400,500,700,900");
 
-$default-font: "Raleway",
-sans-serif;
-$condensed-font: "PT Sans Narrow",
-sans-serif;
+$default-font: "Raleway",sans-serif;
+$condensed-font: "PT Sans Narrow",sans-serif;
 
 body {
   font: 18px/1.2 $default-font;
 }
 
-.font-condesed {
+.font-condensed {
   font-family: $condensed-font;
 }
 
+.font-weight-max {
+  font-weight: 900;
+}
+
 h1 {
-  font-size: 6rem;
+  font-size: 5rem;
 }
 
 h2 {
-  font-size: 5rem;
+  font-size: 4rem;
 }
 
 h3 {

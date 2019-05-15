@@ -19,3 +19,32 @@
 .justify-content-center {
   justify-content: center;
 }
+
+.justify-content-end {
+  justify-content: flex-end;
+}
+
+// d-none d-md-block
+.d-none {
+  display: none;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-md-none {
+  @include screen-only(md) {
+    display: none;
+  }
+}
+
+.d-md-block {
+  @include screen-only(md) {
+    display: block;
+  }
+}
+
+//.d-md {
+//  &-block:
+//}

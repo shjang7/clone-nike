@@ -33,7 +33,7 @@
       <div id="second-navbar" class="d-flex jusitify-content-between">
         <img src="./assets/images/nike-logo.svg" alt="" />
 
-        <ul class="d-flex font-condesed">
+        <ul class="d-flex font-condensed">
           <li>New Releases</li>
           <li>Men</li>
           <li>Women</li>
@@ -47,8 +47,21 @@
       </div>
     </header>
     <main class="px-4">
-      <div class="d-flex justify-content-center mb-4">
-        <img class="w-100" src="./assets/images/sample.jpg" />
+      <div class="d-flex justify-content-center mb-4" id="top-img">
+        <img class="w-100 d-none d-md-block" src="./assets/images/top-img.png" />
+        <img class="w-100 d-block d-md-none" src="./assets/images/top-img-sm.png" />
+        <div class="position-absolute w-100 h-100 text-white
+              d-flex flex-column justify-content-end overlay m-5 p-5">
+          <div class="font-sm-4">
+            Vitae vocibus at eos. Nulla graeco persecuti at nec.
+          </div>
+          <h3 class="font-weight-max font-condensed">
+            Vitae vocibus at eos. Nulla graeco persecuti at nec.
+          </h3>
+          <h3 class="">
+            Vitae vocibus at eos. Nulla graeco persecuti at nec.
+          </h3>
+        </div>
       </div>
       <section id="top-picks" class="my-3">
         <h5 class="title text-capitalize">top picks</h5>

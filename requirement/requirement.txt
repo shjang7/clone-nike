@@ -7,6 +7,7 @@
 7. every elements not overlay without expectation
 8. change scrolling part to grid
     -> after finish, maybe we can change one scrolling
+9. remove temp comment, temp color, temp bg?
 
 
 

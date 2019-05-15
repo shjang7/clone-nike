@@ -5,6 +5,7 @@
 @import "./Layout/grid";
 @import "./components/card";
 @import "display";
+@import "position";
 @import "color";
 
 /* customizing */
@@ -32,8 +33,22 @@ body {
   width: 100%;
 }
 
+.h-inherit {
+  height: inherit;
+}
+
+.h-100 {
+  height: 100%;
+}
+
 .sample-h {
   height: 20rem;
+}
+
+#top-img img {
+  @include screen-only(md) {
+    height: 700/18*1rem;
+  }
 }
 
 #top-picks img {
