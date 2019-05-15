@@ -1,17 +1,14 @@
-@import url("https://fonts.googleapis.com/css?family=PT+Sans+Narrow:700|Raleway:300,400,700,800");
-
-// font-family: 'Raleway', sans-serif;
-// font-family: 'PT Sans Narrow', sans-serif;
+@import url("https://fonts.googleapis.com/css?family=PT+Sans+Narrow:700|Raleway:300,400,500,700,800");
 
 $default-font: "Raleway", sans-serif;
-$menu-font: "PT Sans Narrow", sans-serif;
+$condensed-font: "PT Sans Narrow", sans-serif;
 
 body {
-  font: 18px $default-font;
+  font: 18px/1.2 $default-font;
 }
 
-.menu {
-  font-family: $menu-font;
+.font-condesed {
+  font-family: $condensed-font;
 }
 
 h1 {
@@ -40,4 +37,8 @@ h6 {
 
 .font-md {
   font-size: 0.9rem;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
 }

@@ -1,9 +1,19 @@
-@import "_reset";
-@import "_font.scss";
-@import "_media";
-@import "_display";
-@import "./Layout/_grid.scss";
-@import "_color.scss";
+@import "reset";
+@import "font";
+@import "media";
+@import "./Layout/gutter";
+@import "./Layout/grid";
+@import "./components/card";
+@import "display";
+@import "color";
+
+/* customizing */
+body {
+  overflow-x: hidden;
+}
+* {
+  box-sizing: border-box;
+}
 
 .sample-bg-1 {
   background-color: #03e;
@@ -13,10 +23,22 @@
   background-color: #f3e;
 }
 
+.w-inherit {
+  width: inherit;
+}
+
 .w-100 {
   width: 100%;
 }
 
 .sample-h {
   height: 20rem;
+}
+
+.top-img {
+  width: 80%;
+}
+
+#top-picks img {
+  width: 100%;
 }

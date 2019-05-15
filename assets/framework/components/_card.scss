@@ -1,0 +1,15 @@
+
+
+.card-img {
+}
+
+.card-body {
+  font-size: 1.2rem;
+  font-weight: 500;
+  .card-title {
+    color: #000;
+  }
+  .card-text {
+    color: scale-color(#000,$lightness: 50%);
+  }
+}

@@ -1,4 +1,5 @@
-$gutter: 1;
+
+@import "gutter";
 
 .row {
   margin-left: -$gutter*1rem;

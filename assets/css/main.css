@@ -2,8 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url("https://fonts.googleapis.com/css?family=PT+Sans+Narrow:700|Raleway:300,400,700,800");
-/* line 6, ../../../../../Users/kelvin/projects/web/clone-nike/assets/framework/_reset.scss */
+@import url("https://fonts.googleapis.com/css?family=PT+Sans+Narrow:700|Raleway:300,400,500,700,800");
 html,
 body,
 div,
@@ -90,11 +89,9 @@ video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline;
-}
+  vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
-/* line 95, ../../../../../Users/kelvin/projects/web/clone-nike/assets/framework/_reset.scss */
 article,
 aside,
 details,
@@ -106,371 +103,851 @@ hgroup,
 menu,
 nav,
 section {
-  display: block;
-}
+  display: block; }
 
-/* line 108, ../../../../../Users/kelvin/projects/web/clone-nike/assets/framework/_reset.scss */
 body {
-  line-height: 1;
-}
+  line-height: 1; }
 
-/* line 111, ../../../../../Users/kelvin/projects/web/clone-nike/assets/framework/_reset.scss */
 ol,
 ul {
-  list-style: none;
-}
+  list-style: none; }
 
-/* line 115, ../../../../../Users/kelvin/projects/web/clone-nike/assets/framework/_reset.scss */
 blockquote,
 q {
-  quotes: none;
-}
+  quotes: none; }
 
-/* line 119, ../../../../../Users/kelvin/projects/web/clone-nike/assets/framework/_reset.scss */
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
   content: "";
-  content: none;
-}
+  content: none; }
 
-/* line 126, ../../../../../Users/kelvin/projects/web/clone-nike/assets/framework/_reset.scss */
 table {
   border-collapse: collapse;
-  border-spacing: 0;
-}
+  border-spacing: 0; }
 
-/* line 9, ../../../../../Users/kelvin/projects/web/clone-nike/assets/framework/_font.scss */
 body {
-  font: 18px "Raleway", sans-serif;
-}
+  font: 18px/1.2 "Raleway", sans-serif; }
 
-/* line 13, ../../../../../Users/kelvin/projects/web/clone-nike/assets/framework/_font.scss */
-.menu {
-  font-family: "PT Sans Narrow", sans-serif;
-}
+.font-condesed {
+  font-family: "PT Sans Narrow", sans-serif; }
 
-/* line 17, ../../../../../Users/kelvin/projects/web/clone-nike/assets/framework/_font.scss */
 h1 {
-  font-size: 6rem;
-}
+  font-size: 6rem; }
 
-/* line 21, ../../../../../Users/kelvin/projects/web/clone-nike/assets/framework/_font.scss */
 h2 {
-  font-size: 5rem;
-}
+  font-size: 5rem; }
 
-/* line 24, ../../../../../Users/kelvin/projects/web/clone-nike/assets/framework/_font.scss */
 h3 {
-  font-size: 3rem;
-}
+  font-size: 3rem; }
 
-/* line 27, ../../../../../Users/kelvin/projects/web/clone-nike/assets/framework/_font.scss */
 h4 {
-  font-size: 2rem;
-}
+  font-size: 2rem; }
 
-/* line 30, ../../../../../Users/kelvin/projects/web/clone-nike/assets/framework/_font.scss */
 h5 {
-  font-size: 1.5rem;
-}
+  font-size: 1.5rem; }
 
-/* line 33, ../../../../../Users/kelvin/projects/web/clone-nike/assets/framework/_font.scss */
 h6 {
-  font-size: 1rem;
-}
+  font-size: 1rem; }
 
-/* line 37, ../../../../../Users/kelvin/projects/web/clone-nike/assets/framework/_font.scss */
 .font-sm {
-  font-size: 0.5rem;
-}
+  font-size: 0.5rem; }
 
-/* line 41, ../../../../../Users/kelvin/projects/web/clone-nike/assets/framework/_font.scss */
 .font-md {
-  font-size: 0.9rem;
-}
+  font-size: 0.9rem; }
 
-/* line 1, ../../../../../Users/kelvin/projects/web/clone-nike/assets/framework/_display.scss */
-.d-flex {
-  display: flex;
-}
+.text-capitalize {
+  text-transform: capitalize; }
 
-/* line 5, ../../../../../Users/kelvin/projects/web/clone-nike/assets/framework/_display.scss */
-.flex-column {
-  flex-direction: column;
-}
+.px-0 {
+  padding-left: 0rem;
+  padding-right: 0rem; }
 
-@media (min-width: 768px) {
-  /* line 9, ../../../../../Users/kelvin/projects/web/clone-nike/assets/framework/_display.scss */
-  .flex-md-row {
-    flex-direction: row;
-  }
-}
+.mt-0 {
+  margin-top: 0rem; }
 
-/* line 15, ../../../../../Users/kelvin/projects/web/clone-nike/assets/framework/_display.scss */
-.jusitify-content-between {
-  justify-content: space-between;
-}
+.mr-0 {
+  margin-right: 0rem; }
 
-/* line 3, ../../../../../Users/kelvin/projects/web/clone-nike/assets/framework/Layout/_grid.scss */
+.mb-0 {
+  margin-bottom: 0rem; }
+
+.ml-0 {
+  margin-left: 0rem; }
+
+.mx-0 {
+  margin-left: 0rem;
+  margin-right: 0rem; }
+
+.my-0 {
+  margin-top: 0rem;
+  margin-bottom: 0rem; }
+
+.m-0 {
+  margin: 0rem; }
+
+.mt-n0 {
+  margin-top: 0rem; }
+
+.mr-n0 {
+  margin-right: 0rem; }
+
+.mb-n0 {
+  margin-bottom: 0rem; }
+
+.ml-n0 {
+  margin-left: 0rem; }
+
+.mx-n0 {
+  margin-left: 0rem;
+  margin-right: 0rem; }
+
+.my-n0 {
+  margin-top: 0rem;
+  margin-bottom: 0rem; }
+
+.m-n0 {
+  margin: 0rem; }
+
+.px-1 {
+  padding-left: 1rem;
+  padding-right: 1rem; }
+
+.mt-1 {
+  margin-top: 1rem; }
+
+.mr-1 {
+  margin-right: 1rem; }
+
+.mb-1 {
+  margin-bottom: 1rem; }
+
+.ml-1 {
+  margin-left: 1rem; }
+
+.mx-1 {
+  margin-left: 1rem;
+  margin-right: 1rem; }
+
+.my-1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
+
+.m-1 {
+  margin: 1rem; }
+
+.mt-n1 {
+  margin-top: -1rem; }
+
+.mr-n1 {
+  margin-right: -1rem; }
+
+.mb-n1 {
+  margin-bottom: -1rem; }
+
+.ml-n1 {
+  margin-left: -1rem; }
+
+.mx-n1 {
+  margin-left: -1rem;
+  margin-right: -1rem; }
+
+.my-n1 {
+  margin-top: -1rem;
+  margin-bottom: -1rem; }
+
+.m-n1 {
+  margin: -1rem; }
+
+.px-2 {
+  padding-left: 2rem;
+  padding-right: 2rem; }
+
+.mt-2 {
+  margin-top: 2rem; }
+
+.mr-2 {
+  margin-right: 2rem; }
+
+.mb-2 {
+  margin-bottom: 2rem; }
+
+.ml-2 {
+  margin-left: 2rem; }
+
+.mx-2 {
+  margin-left: 2rem;
+  margin-right: 2rem; }
+
+.my-2 {
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
+
+.m-2 {
+  margin: 2rem; }
+
+.mt-n2 {
+  margin-top: -2rem; }
+
+.mr-n2 {
+  margin-right: -2rem; }
+
+.mb-n2 {
+  margin-bottom: -2rem; }
+
+.ml-n2 {
+  margin-left: -2rem; }
+
+.mx-n2 {
+  margin-left: -2rem;
+  margin-right: -2rem; }
+
+.my-n2 {
+  margin-top: -2rem;
+  margin-bottom: -2rem; }
+
+.m-n2 {
+  margin: -2rem; }
+
+.px-3 {
+  padding-left: 3rem;
+  padding-right: 3rem; }
+
+.mt-3 {
+  margin-top: 3rem; }
+
+.mr-3 {
+  margin-right: 3rem; }
+
+.mb-3 {
+  margin-bottom: 3rem; }
+
+.ml-3 {
+  margin-left: 3rem; }
+
+.mx-3 {
+  margin-left: 3rem;
+  margin-right: 3rem; }
+
+.my-3 {
+  margin-top: 3rem;
+  margin-bottom: 3rem; }
+
+.m-3 {
+  margin: 3rem; }
+
+.mt-n3 {
+  margin-top: -3rem; }
+
+.mr-n3 {
+  margin-right: -3rem; }
+
+.mb-n3 {
+  margin-bottom: -3rem; }
+
+.ml-n3 {
+  margin-left: -3rem; }
+
+.mx-n3 {
+  margin-left: -3rem;
+  margin-right: -3rem; }
+
+.my-n3 {
+  margin-top: -3rem;
+  margin-bottom: -3rem; }
+
+.m-n3 {
+  margin: -3rem; }
+
+.px-4 {
+  padding-left: 4rem;
+  padding-right: 4rem; }
+
+.mt-4 {
+  margin-top: 4rem; }
+
+.mr-4 {
+  margin-right: 4rem; }
+
+.mb-4 {
+  margin-bottom: 4rem; }
+
+.ml-4 {
+  margin-left: 4rem; }
+
+.mx-4 {
+  margin-left: 4rem;
+  margin-right: 4rem; }
+
+.my-4 {
+  margin-top: 4rem;
+  margin-bottom: 4rem; }
+
+.m-4 {
+  margin: 4rem; }
+
+.mt-n4 {
+  margin-top: -4rem; }
+
+.mr-n4 {
+  margin-right: -4rem; }
+
+.mb-n4 {
+  margin-bottom: -4rem; }
+
+.ml-n4 {
+  margin-left: -4rem; }
+
+.mx-n4 {
+  margin-left: -4rem;
+  margin-right: -4rem; }
+
+.my-n4 {
+  margin-top: -4rem;
+  margin-bottom: -4rem; }
+
+.m-n4 {
+  margin: -4rem; }
+
+.px-5 {
+  padding-left: 5rem;
+  padding-right: 5rem; }
+
+.mt-5 {
+  margin-top: 5rem; }
+
+.mr-5 {
+  margin-right: 5rem; }
+
+.mb-5 {
+  margin-bottom: 5rem; }
+
+.ml-5 {
+  margin-left: 5rem; }
+
+.mx-5 {
+  margin-left: 5rem;
+  margin-right: 5rem; }
+
+.my-5 {
+  margin-top: 5rem;
+  margin-bottom: 5rem; }
+
+.m-5 {
+  margin: 5rem; }
+
+.mt-n5 {
+  margin-top: -5rem; }
+
+.mr-n5 {
+  margin-right: -5rem; }
+
+.mb-n5 {
+  margin-bottom: -5rem; }
+
+.ml-n5 {
+  margin-left: -5rem; }
+
+.mx-n5 {
+  margin-left: -5rem;
+  margin-right: -5rem; }
+
+.my-n5 {
+  margin-top: -5rem;
+  margin-bottom: -5rem; }
+
+.m-n5 {
+  margin: -5rem; }
+
+.px-0 {
+  padding-left: 0rem;
+  padding-right: 0rem; }
+
+.mt-0 {
+  margin-top: 0rem; }
+
+.mr-0 {
+  margin-right: 0rem; }
+
+.mb-0 {
+  margin-bottom: 0rem; }
+
+.ml-0 {
+  margin-left: 0rem; }
+
+.mx-0 {
+  margin-left: 0rem;
+  margin-right: 0rem; }
+
+.my-0 {
+  margin-top: 0rem;
+  margin-bottom: 0rem; }
+
+.m-0 {
+  margin: 0rem; }
+
+.mt-n0 {
+  margin-top: 0rem; }
+
+.mr-n0 {
+  margin-right: 0rem; }
+
+.mb-n0 {
+  margin-bottom: 0rem; }
+
+.ml-n0 {
+  margin-left: 0rem; }
+
+.mx-n0 {
+  margin-left: 0rem;
+  margin-right: 0rem; }
+
+.my-n0 {
+  margin-top: 0rem;
+  margin-bottom: 0rem; }
+
+.m-n0 {
+  margin: 0rem; }
+
+.px-1 {
+  padding-left: 1rem;
+  padding-right: 1rem; }
+
+.mt-1 {
+  margin-top: 1rem; }
+
+.mr-1 {
+  margin-right: 1rem; }
+
+.mb-1 {
+  margin-bottom: 1rem; }
+
+.ml-1 {
+  margin-left: 1rem; }
+
+.mx-1 {
+  margin-left: 1rem;
+  margin-right: 1rem; }
+
+.my-1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
+
+.m-1 {
+  margin: 1rem; }
+
+.mt-n1 {
+  margin-top: -1rem; }
+
+.mr-n1 {
+  margin-right: -1rem; }
+
+.mb-n1 {
+  margin-bottom: -1rem; }
+
+.ml-n1 {
+  margin-left: -1rem; }
+
+.mx-n1 {
+  margin-left: -1rem;
+  margin-right: -1rem; }
+
+.my-n1 {
+  margin-top: -1rem;
+  margin-bottom: -1rem; }
+
+.m-n1 {
+  margin: -1rem; }
+
+.px-2 {
+  padding-left: 2rem;
+  padding-right: 2rem; }
+
+.mt-2 {
+  margin-top: 2rem; }
+
+.mr-2 {
+  margin-right: 2rem; }
+
+.mb-2 {
+  margin-bottom: 2rem; }
+
+.ml-2 {
+  margin-left: 2rem; }
+
+.mx-2 {
+  margin-left: 2rem;
+  margin-right: 2rem; }
+
+.my-2 {
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
+
+.m-2 {
+  margin: 2rem; }
+
+.mt-n2 {
+  margin-top: -2rem; }
+
+.mr-n2 {
+  margin-right: -2rem; }
+
+.mb-n2 {
+  margin-bottom: -2rem; }
+
+.ml-n2 {
+  margin-left: -2rem; }
+
+.mx-n2 {
+  margin-left: -2rem;
+  margin-right: -2rem; }
+
+.my-n2 {
+  margin-top: -2rem;
+  margin-bottom: -2rem; }
+
+.m-n2 {
+  margin: -2rem; }
+
+.px-3 {
+  padding-left: 3rem;
+  padding-right: 3rem; }
+
+.mt-3 {
+  margin-top: 3rem; }
+
+.mr-3 {
+  margin-right: 3rem; }
+
+.mb-3 {
+  margin-bottom: 3rem; }
+
+.ml-3 {
+  margin-left: 3rem; }
+
+.mx-3 {
+  margin-left: 3rem;
+  margin-right: 3rem; }
+
+.my-3 {
+  margin-top: 3rem;
+  margin-bottom: 3rem; }
+
+.m-3 {
+  margin: 3rem; }
+
+.mt-n3 {
+  margin-top: -3rem; }
+
+.mr-n3 {
+  margin-right: -3rem; }
+
+.mb-n3 {
+  margin-bottom: -3rem; }
+
+.ml-n3 {
+  margin-left: -3rem; }
+
+.mx-n3 {
+  margin-left: -3rem;
+  margin-right: -3rem; }
+
+.my-n3 {
+  margin-top: -3rem;
+  margin-bottom: -3rem; }
+
+.m-n3 {
+  margin: -3rem; }
+
+.px-4 {
+  padding-left: 4rem;
+  padding-right: 4rem; }
+
+.mt-4 {
+  margin-top: 4rem; }
+
+.mr-4 {
+  margin-right: 4rem; }
+
+.mb-4 {
+  margin-bottom: 4rem; }
+
+.ml-4 {
+  margin-left: 4rem; }
+
+.mx-4 {
+  margin-left: 4rem;
+  margin-right: 4rem; }
+
+.my-4 {
+  margin-top: 4rem;
+  margin-bottom: 4rem; }
+
+.m-4 {
+  margin: 4rem; }
+
+.mt-n4 {
+  margin-top: -4rem; }
+
+.mr-n4 {
+  margin-right: -4rem; }
+
+.mb-n4 {
+  margin-bottom: -4rem; }
+
+.ml-n4 {
+  margin-left: -4rem; }
+
+.mx-n4 {
+  margin-left: -4rem;
+  margin-right: -4rem; }
+
+.my-n4 {
+  margin-top: -4rem;
+  margin-bottom: -4rem; }
+
+.m-n4 {
+  margin: -4rem; }
+
+.px-5 {
+  padding-left: 5rem;
+  padding-right: 5rem; }
+
+.mt-5 {
+  margin-top: 5rem; }
+
+.mr-5 {
+  margin-right: 5rem; }
+
+.mb-5 {
+  margin-bottom: 5rem; }
+
+.ml-5 {
+  margin-left: 5rem; }
+
+.mx-5 {
+  margin-left: 5rem;
+  margin-right: 5rem; }
+
+.my-5 {
+  margin-top: 5rem;
+  margin-bottom: 5rem; }
+
+.m-5 {
+  margin: 5rem; }
+
+.mt-n5 {
+  margin-top: -5rem; }
+
+.mr-n5 {
+  margin-right: -5rem; }
+
+.mb-n5 {
+  margin-bottom: -5rem; }
+
+.ml-n5 {
+  margin-left: -5rem; }
+
+.mx-n5 {
+  margin-left: -5rem;
+  margin-right: -5rem; }
+
+.my-n5 {
+  margin-top: -5rem;
+  margin-bottom: -5rem; }
+
+.m-n5 {
+  margin: -5rem; }
+
 .row {
   margin-left: -1rem;
-  margin-right: -1rem;
-}
+  margin-right: -1rem; }
 
-/* line 8, ../../../../../Users/kelvin/projects/web/clone-nike/assets/framework/Layout/_grid.scss */
 [class*=col-] {
   padding-left: 1rem;
-  padding-right: 1rem;
-}
+  padding-right: 1rem; }
 
-/* line 14, ../../../../../Users/kelvin/projects/web/clone-nike/assets/framework/Layout/_grid.scss */
 .col-1 {
-  width: 8.33333%;
-}
+  width: 8.3333333333%; }
 
 @media (min-width: 768px) {
-  /* line 17, ../../../../../Users/kelvin/projects/web/clone-nike/assets/framework/Layout/_grid.scss */
   .col-md-1 {
-    width: 8.33333%;
-  }
-}
+    width: 8.3333333333%; } }
 
 @media (min-width: 992px) {
-  /* line 22, ../../../../../Users/kelvin/projects/web/clone-nike/assets/framework/Layout/_grid.scss */
   .col-lg-1 {
-    width: 8.33333%;
-  }
-}
+    width: 8.3333333333%; } }
 
-/* line 14, ../../../../../Users/kelvin/projects/web/clone-nike/assets/framework/Layout/_grid.scss */
 .col-2 {
-  width: 16.66667%;
-}
+  width: 16.6666666667%; }
 
 @media (min-width: 768px) {
-  /* line 17, ../../../../../Users/kelvin/projects/web/clone-nike/assets/framework/Layout/_grid.scss */
   .col-md-2 {
-    width: 16.66667%;
-  }
-}
+    width: 16.6666666667%; } }
 
 @media (min-width: 992px) {
-  /* line 22, ../../../../../Users/kelvin/projects/web/clone-nike/assets/framework/Layout/_grid.scss */
   .col-lg-2 {
-    width: 16.66667%;
-  }
-}
+    width: 16.6666666667%; } }
 
-/* line 14, ../../../../../Users/kelvin/projects/web/clone-nike/assets/framework/Layout/_grid.scss */
 .col-3 {
-  width: 25%;
-}
+  width: 25%; }
 
 @media (min-width: 768px) {
-  /* line 17, ../../../../../Users/kelvin/projects/web/clone-nike/assets/framework/Layout/_grid.scss */
   .col-md-3 {
-    width: 25%;
-  }
-}
+    width: 25%; } }
 
 @media (min-width: 992px) {
-  /* line 22, ../../../../../Users/kelvin/projects/web/clone-nike/assets/framework/Layout/_grid.scss */
   .col-lg-3 {
-    width: 25%;
-  }
-}
+    width: 25%; } }
 
-/* line 14, ../../../../../Users/kelvin/projects/web/clone-nike/assets/framework/Layout/_grid.scss */
 .col-4 {
-  width: 33.33333%;
-}
+  width: 33.3333333333%; }
 
 @media (min-width: 768px) {
-  /* line 17, ../../../../../Users/kelvin/projects/web/clone-nike/assets/framework/Layout/_grid.scss */
   .col-md-4 {
-    width: 33.33333%;
-  }
-}
+    width: 33.3333333333%; } }
 
 @media (min-width: 992px) {
-  /* line 22, ../../../../../Users/kelvin/projects/web/clone-nike/assets/framework/Layout/_grid.scss */
   .col-lg-4 {
-    width: 33.33333%;
-  }
-}
+    width: 33.3333333333%; } }
 
-/* line 14, ../../../../../Users/kelvin/projects/web/clone-nike/assets/framework/Layout/_grid.scss */
 .col-5 {
-  width: 41.66667%;
-}
+  width: 41.6666666667%; }
 
 @media (min-width: 768px) {
-  /* line 17, ../../../../../Users/kelvin/projects/web/clone-nike/assets/framework/Layout/_grid.scss */
   .col-md-5 {
-    width: 41.66667%;
-  }
-}
+    width: 41.6666666667%; } }
 
 @media (min-width: 992px) {
-  /* line 22, ../../../../../Users/kelvin/projects/web/clone-nike/assets/framework/Layout/_grid.scss */
   .col-lg-5 {
-    width: 41.66667%;
-  }
-}
+    width: 41.6666666667%; } }
 
-/* line 14, ../../../../../Users/kelvin/projects/web/clone-nike/assets/framework/Layout/_grid.scss */
 .col-6 {
-  width: 50%;
-}
+  width: 50%; }
 
 @media (min-width: 768px) {
-  /* line 17, ../../../../../Users/kelvin/projects/web/clone-nike/assets/framework/Layout/_grid.scss */
   .col-md-6 {
-    width: 50%;
-  }
-}
+    width: 50%; } }
 
 @media (min-width: 992px) {
-  /* line 22, ../../../../../Users/kelvin/projects/web/clone-nike/assets/framework/Layout/_grid.scss */
   .col-lg-6 {
-    width: 50%;
-  }
-}
+    width: 50%; } }
 
-/* line 14, ../../../../../Users/kelvin/projects/web/clone-nike/assets/framework/Layout/_grid.scss */
 .col-7 {
-  width: 58.33333%;
-}
+  width: 58.3333333333%; }
 
 @media (min-width: 768px) {
-  /* line 17, ../../../../../Users/kelvin/projects/web/clone-nike/assets/framework/Layout/_grid.scss */
   .col-md-7 {
-    width: 58.33333%;
-  }
-}
+    width: 58.3333333333%; } }
 
 @media (min-width: 992px) {
-  /* line 22, ../../../../../Users/kelvin/projects/web/clone-nike/assets/framework/Layout/_grid.scss */
   .col-lg-7 {
-    width: 58.33333%;
-  }
-}
+    width: 58.3333333333%; } }
 
-/* line 14, ../../../../../Users/kelvin/projects/web/clone-nike/assets/framework/Layout/_grid.scss */
 .col-8 {
-  width: 66.66667%;
-}
+  width: 66.6666666667%; }
 
 @media (min-width: 768px) {
-  /* line 17, ../../../../../Users/kelvin/projects/web/clone-nike/assets/framework/Layout/_grid.scss */
   .col-md-8 {
-    width: 66.66667%;
-  }
-}
+    width: 66.6666666667%; } }
 
 @media (min-width: 992px) {
-  /* line 22, ../../../../../Users/kelvin/projects/web/clone-nike/assets/framework/Layout/_grid.scss */
   .col-lg-8 {
-    width: 66.66667%;
-  }
-}
+    width: 66.6666666667%; } }
 
-/* line 14, ../../../../../Users/kelvin/projects/web/clone-nike/assets/framework/Layout/_grid.scss */
 .col-9 {
-  width: 75%;
-}
+  width: 75%; }
 
 @media (min-width: 768px) {
-  /* line 17, ../../../../../Users/kelvin/projects/web/clone-nike/assets/framework/Layout/_grid.scss */
   .col-md-9 {
-    width: 75%;
-  }
-}
+    width: 75%; } }
 
 @media (min-width: 992px) {
-  /* line 22, ../../../../../Users/kelvin/projects/web/clone-nike/assets/framework/Layout/_grid.scss */
   .col-lg-9 {
-    width: 75%;
-  }
-}
+    width: 75%; } }
 
-/* line 14, ../../../../../Users/kelvin/projects/web/clone-nike/assets/framework/Layout/_grid.scss */
 .col-10 {
-  width: 83.33333%;
-}
+  width: 83.3333333333%; }
 
 @media (min-width: 768px) {
-  /* line 17, ../../../../../Users/kelvin/projects/web/clone-nike/assets/framework/Layout/_grid.scss */
   .col-md-10 {
-    width: 83.33333%;
-  }
-}
+    width: 83.3333333333%; } }
 
 @media (min-width: 992px) {
-  /* line 22, ../../../../../Users/kelvin/projects/web/clone-nike/assets/framework/Layout/_grid.scss */
   .col-lg-10 {
-    width: 83.33333%;
-  }
-}
+    width: 83.3333333333%; } }
 
-/* line 14, ../../../../../Users/kelvin/projects/web/clone-nike/assets/framework/Layout/_grid.scss */
 .col-11 {
-  width: 91.66667%;
-}
+  width: 91.6666666667%; }
 
 @media (min-width: 768px) {
-  /* line 17, ../../../../../Users/kelvin/projects/web/clone-nike/assets/framework/Layout/_grid.scss */
   .col-md-11 {
-    width: 91.66667%;
-  }
-}
+    width: 91.6666666667%; } }
 
 @media (min-width: 992px) {
-  /* line 22, ../../../../../Users/kelvin/projects/web/clone-nike/assets/framework/Layout/_grid.scss */
   .col-lg-11 {
-    width: 91.66667%;
-  }
-}
+    width: 91.6666666667%; } }
 
-/* line 14, ../../../../../Users/kelvin/projects/web/clone-nike/assets/framework/Layout/_grid.scss */
 .col-12 {
-  width: 100%;
-}
+  width: 100%; }
 
 @media (min-width: 768px) {
-  /* line 17, ../../../../../Users/kelvin/projects/web/clone-nike/assets/framework/Layout/_grid.scss */
   .col-md-12 {
-    width: 100%;
-  }
-}
+    width: 100%; } }
 
 @media (min-width: 992px) {
-  /* line 22, ../../../../../Users/kelvin/projects/web/clone-nike/assets/framework/Layout/_grid.scss */
   .col-lg-12 {
-    width: 100%;
-  }
-}
+    width: 100%; } }
 
-/* line 8, ../../../../../Users/kelvin/projects/web/clone-nike/assets/framework/main.scss */
+.card-body {
+  font-size: 1.2rem;
+  font-weight: 500; }
+  .card-body .card-title {
+    color: #000; }
+  .card-body .card-text {
+    color: gray; }
+
+.d-flex {
+  display: flex; }
+
+.flex-column {
+  flex-direction: column; }
+
+@media (min-width: 768px) {
+  .flex-md-row {
+    flex-direction: row; } }
+
+.jusitify-content-between {
+  justify-content: space-between; }
+
+.justify-content-center {
+  justify-content: center; }
+
+/* customizing */
+body {
+  overflow-x: hidden; }
+
+* {
+  box-sizing: border-box; }
+
 .sample-bg-1 {
-  background-color: #03e;
-}
+  background-color: #03e; }
 
-/* line 12, ../../../../../Users/kelvin/projects/web/clone-nike/assets/framework/main.scss */
 .sample-bg-2 {
-  background-color: #f3e;
-}
+  background-color: #f3e; }
 
-/* line 16, ../../../../../Users/kelvin/projects/web/clone-nike/assets/framework/main.scss */
+.w-inherit {
+  width: inherit; }
+
 .w-100 {
-  width: 100%;
-}
+  width: 100%; }
 
-/* line 20, ../../../../../Users/kelvin/projects/web/clone-nike/assets/framework/main.scss */
 .sample-h {
-  height: 20rem;
-}
+  height: 20rem; }
 
-/*# sourceMappingURL=main.css.map */
+.top-img {
+  width: 80%; }
+
+#top-picks img {
+  width: 100%; }
