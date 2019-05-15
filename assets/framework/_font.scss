@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=PT+Sans+Narrow:700|Raleway:300,400,500,700,800");
 
-$default-font: "Raleway", sans-serif;
-$condensed-font: "PT Sans Narrow", sans-serif;
+$default-font: "Raleway",
+sans-serif;
+$condensed-font: "PT Sans Narrow",
+sans-serif;
 
 body {
   font: 18px/1.2 $default-font;
@@ -18,26 +20,30 @@ h1 {
 h2 {
   font-size: 5rem;
 }
+
 h3 {
   font-size: 3rem;
 }
+
 h4 {
   font-size: 2rem;
 }
+
 h5 {
   font-size: 1.5rem;
 }
+
 h6 {
   font-size: 1rem;
 }
 
-.font-sm {
-  font-size: 0.5rem;
+@for $i from 1 through 5 {
+  .font-sm-#{$i} {
+    font-size: 0.5rem + 0.1rem * $i;
+  }
 }
 
-.font-md {
-  font-size: 0.9rem;
-}
+
 
 .text-capitalize {
   text-transform: capitalize;
