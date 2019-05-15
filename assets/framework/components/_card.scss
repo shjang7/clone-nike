@@ -1,6 +1,12 @@
 
+.card {
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+}
 
 .card-img {
+  margin-top: 1rem;
+  margin-bottom: 0.4rem;
 }
 
 .card-body {
@@ -8,8 +14,11 @@
   font-weight: 500;
   .card-title {
     color: #000;
+    margin-top: 0.4rem;
+    margin-bottom: 0.4rem;
   }
   .card-text {
+    font-size: 1.1rem;
     color: scale-color(#000,$lightness: 50%);
   }
 }
