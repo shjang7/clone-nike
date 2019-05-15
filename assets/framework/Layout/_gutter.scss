@@ -1,4 +1,3 @@
-
 $gutter: 1;
 
 @for $i from 0 through 5 {
@@ -6,49 +5,67 @@ $gutter: 1;
     padding-left: $i*$gutter*1rem;
     padding-right: $i*$gutter*1rem;
   }
+
+  .pr-#{$i} {
+    padding-right: $i*$gutter*1rem;
+  }
+
   .mt-#{$i} {
     margin-top: $i*$gutter*1rem;
   }
+
   .mr-#{$i} {
     margin-right: $i*$gutter*1rem;
   }
+
   .mb-#{$i} {
     margin-bottom: $i*$gutter*1rem;
   }
+
   .ml-#{$i} {
     margin-left: $i*$gutter*1rem;
   }
+
   .mx-#{$i} {
     margin-left: $i*$gutter*1rem;
     margin-right: $i*$gutter*1rem;
   }
+
   .my-#{$i} {
     margin-top: $i*$gutter*1rem;
     margin-bottom: $i*$gutter*1rem;
   }
+
   .m-#{$i} {
     margin: $i*$gutter*1rem;
   }
+
   .mt-n#{$i} {
     margin-top: -$i*$gutter*1rem;
   }
+
   .mr-n#{$i} {
     margin-right: -$i*$gutter*1rem;
   }
+
   .mb-n#{$i} {
     margin-bottom: -$i*$gutter*1rem;
   }
+
   .ml-n#{$i} {
     margin-left: -$i*$gutter*1rem;
   }
+
   .mx-n#{$i} {
     margin-left: -$i*$gutter*1rem;
     margin-right: -$i*$gutter*1rem;
   }
+
   .my-n#{$i} {
     margin-top: -$i*$gutter*1rem;
     margin-bottom: -$i*$gutter*1rem;
   }
+
   .m-n#{$i} {
     margin: -$i*$gutter*1rem;
   }
