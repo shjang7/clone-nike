@@ -9,10 +9,11 @@ $display-style: "flex",
         display: #{nth($display-style,$i+1)};
       }
     }
-
     @else {
-      .d-#{$size}-#{nth($display-style,$i+1)} {
-        display: #{nth($display-style,$i+1)};
+      @include screen-only($size) {
+        .d-#{$size}-#{nth($display-style,$i+1)} {
+          display: #{nth($display-style,$i+1)};
+        }
       }
     }
   }
