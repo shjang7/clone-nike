@@ -5,11 +5,25 @@ $gutter: 0.5;
     padding-left: $i*$gutter*1rem;
     padding-right: $i*$gutter*1rem;
   }
+  .pt-#{$i} {
+    padding-top: $i*$gutter*1rem;
+  }
+
+  .pr-#{$i} {
+    padding-right: $i*$gutter*1rem;
+  }
+
+  .pb-#{$i} {
+    padding-bottom: $i*$gutter*1rem;
+  }
+
+  .pl-#{$i} {
+    padding-left: $i*$gutter*1rem;
+  }
   .px-#{$i} {
     padding-left: $i*$gutter*1rem;
     padding-right: $i*$gutter*1rem;
   }
-
   .py-#{$i} {
     padding-top: $i*$gutter*1rem;
     padding-bottom: $i*$gutter*1rem;
