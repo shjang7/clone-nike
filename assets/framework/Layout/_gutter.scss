@@ -1,10 +1,11 @@
 $gutter: 0.5;
 
+
 @for $i from 0 through 5 {
   .p-#{$i} {
-    padding-left: $i*$gutter*1rem;
-    padding-right: $i*$gutter*1rem;
+    padding: $i*$gutter*1rem;
   }
+
   .pt-#{$i} {
     padding-top: $i*$gutter*1rem;
   }
@@ -20,10 +21,12 @@ $gutter: 0.5;
   .pl-#{$i} {
     padding-left: $i*$gutter*1rem;
   }
+
   .px-#{$i} {
     padding-left: $i*$gutter*1rem;
     padding-right: $i*$gutter*1rem;
   }
+
   .py-#{$i} {
     padding-top: $i*$gutter*1rem;
     padding-bottom: $i*$gutter*1rem;
