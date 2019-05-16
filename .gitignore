@@ -61,6 +61,8 @@ typings/
 .next
 
 .DS_Store
+
+assets/css/main.map
 ./assets/css/main.map
 ./assets/css/main.css.map
 ./assets/.sass-cache

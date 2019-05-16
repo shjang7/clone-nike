@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=PT+Sans+Narrow:700|Raleway:300,400,500,700,900");
 
-$default-font: "Raleway",sans-serif;
-$condensed-font: "PT Sans Narrow",sans-serif;
+$default-font: "Raleway",
+sans-serif;
+$condensed-font: "PT Sans Narrow",
+sans-serif;
 
 body {
   font: 18px/1.2 $default-font;
@@ -13,6 +15,10 @@ body {
 
 .font-weight-max {
   font-weight: 900;
+}
+
+.font-weight-bolder {
+  font-weight: bolder;
 }
 
 h1 {
@@ -45,8 +51,32 @@ h6 {
   }
 }
 
-
-
 .text-capitalize {
   text-transform: capitalize;
+}
+
+.link-no-decoration {
+  a {
+    text-decoration: none;
+  }
+}
+
+.link-gray {
+  a {
+    color: gray;
+  }
+
+  a:hover {
+    color: black;
+  }
+}
+
+.link-black {
+  a {
+    color: black;
+  }
+
+  a:hover {
+  text-decoration: underline;
+}
 }

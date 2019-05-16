@@ -14,44 +14,103 @@
     <title>Clone Nike.com</title>
   </head>
   <body>
-    <header class="mb-3">
-      <div id="top-navbar" class="d-flex jusitify-content-between font-sm-2">
-        <ul id="top-navbar-left" class="d-flex px-2">
-          <li>NikePlus</li>
-          <li>NikePlus</li>
-          <li>Hurley</li>
-          <li>CONVERSE</li>
+    <header class="position-fixed w-100 bg-white mb-3 link-no-decoration ">
+      <div
+        id="top-navbar"
+        class="d-flex jusitify-content-between font-sm-3 link-gray  "
+      >
+        <ul id="top-navbar-left" class="d-flex px-2 ">
+          <li>
+            <a href="#">
+              NikePlus
+            </a>
+          </li>
+          <li>
+            <a href="#" class="px-3 font-weight-bolder">
+              <i class="fas fa-running"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Hurley
+              <i class="fas fa-football-ball font-weight-bolder px-1"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="font-weight-bolder">
+              CONVERSE >
+            </a>
+          </li>
         </ul>
 
         <ul id="top-navbar-right" class="d-flex px-2 ">
-          <li>Join / Log In To NikePlus Account</li>
-          <li>Help</li>
-          <li>Shopping card</li>
-          <li>Country Flag</li>
+          <li>
+            <a href="#">
+              Join / Log In To NikePlus Account
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Help
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-shopping-cart"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./assets/images/us-sml.png" alt="U.S" />
+            </a>
+          </li>
         </ul>
       </div>
-      <div id="second-navbar" class="d-flex jusitify-content-between">
-        <img src="./assets/images/nike-logo.svg" alt="" />
+      <div
+        id="second-navbar"
+        class="d-flex jusitify-content-between align-items-center link-black"
+      >
+        <a href="#">
+          <img src="./assets/images/nike-logo.svg" alt="" />
+        </a>
 
         <ul class="d-flex font-condensed">
-          <li>New Releases</li>
-          <li>Men</li>
-          <li>Women</li>
-          <li>Kids</li>
-          <li>Customize</li>
+          <li>
+            <a href="#">
+              New Releases
+            </a>
+          </li>
+          <li>
+            <a href="#">Men</a>
+          </li>
+          <li><a href="#">Women</a></li>
+          <li>
+            <a href="#">Kids</a>
+          </li>
+          <li>
+            <a href="#">Customize</a>
+          </li>
         </ul>
 
         <form action="submit">
-          <input type="text" />
+          <input type="text" placeholder="Search" class="font-sm-4" />
         </form>
       </div>
     </header>
     <main class="px-4">
       <div class="d-flex justify-content-center mb-4" id="top-img">
-        <img class="w-100 d-none d-md-block" src="./assets/images/top-img.png" />
-        <img class="w-100 d-block d-md-none" src="./assets/images/top-img-sm.png" />
-        <div class="position-absolute w-100 h-100 text-white
-              d-flex flex-column justify-content-end overlay m-5 p-5">
+        <img
+          class="w-100 d-none d-md-block"
+          src="./assets/images/top-img.png"
+        />
+        <img
+          class="w-100 d-block d-md-none"
+          src="./assets/images/top-img-sm.png"
+        />
+        <div
+          class="position-absolute w-100 h-100 text-white
+              d-flex flex-column justify-content-end overlay m-5 p-5"
+        >
           <div class="font-sm-4">
             Vitae vocibus at eos. Nulla graeco persecuti at nec.
           </div>
@@ -104,10 +163,14 @@
 
       <div class="row d-flex flex-md-row flex-column">
         <div class="col-lg-6">
-          <div class="sample-bg-1 sample-h w-100"><div class="sample-bg-2 sample-h w-100"></div></div>
+          <div class="sample-bg-1 sample-h w-100">
+            <div class="sample-bg-2 sample-h w-100"></div>
+          </div>
         </div>
         <div class="col-lg-6">
-          <div class="sample-bg-2 sample-h w-100"><div class="sample-bg-1 sample-h w-100"></div></div>
+          <div class="sample-bg-2 sample-h w-100">
+            <div class="sample-bg-1 sample-h w-100"></div>
+          </div>
         </div>
       </div>
     </main>
