@@ -22,3 +22,34 @@
     color: scale-color(#000,$lightness: 50%);
   }
 }
+
+.card-for-overlay {
+  .card-img {
+    width: 100%;
+  }
+  .card-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  .card-title {
+    font-size: 3rem;
+    font-weight: 900;
+    width: 100%;
+    @include screen-only(lg) {
+      font-size: 4.5rem;
+      width: 50%;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+  }
+  .card-text {
+    font-size: 1.2rem;
+  }
+  .card-button {
+    font-size: 1rem;
+    border-radius: 1.5rem;
+    padding: 0.6rem 1.5rem;
+    margin: 0 0.2rem;
+  }
+}

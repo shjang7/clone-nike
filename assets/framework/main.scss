@@ -11,6 +11,13 @@
 /* customizing */
 
 $header-size: 10;
+$border-gray: lightgray 0.5px solid;
+$border-normal: 1px black solid;
+$border-thick: 2px black solid;
+
+ul li {
+  padding: 0.7rem 0.8rem;
+}
 
 body {
   overflow-x: hidden;
@@ -48,9 +55,40 @@ body {
   height: 20rem;
 }
 
-#top-img img {
+.fit-cover {
+  object-fit: cover;
+}
+
+.fit-contain {
+  object-fit: contain;
+}
+
+button {
+  cursor: pointer;
+}
+
+.z-index-1 {
+  z-index: 5;
+}
+
+.z-index-2 {
+  z-index: 10;
+}
+
+.border {
+  border: $border-normal;
+}
+
+.border-bottom-gray {
+  border-bottom: $border-gray;
+}
+
+#top-img .card-img {
+  height: 500/18*1rem;
+  background: #aaf url(./../images/top-img-sm.png) 100% 20%/cover no-repeat;
   @include screen-only(md) {
     height: 700/18*1rem;
+    background: #aaf url(./../images/top-img.png) 50% 100%/cover no-repeat;
   }
 }
 
@@ -58,34 +96,30 @@ body {
   width: 100%;
 }
 
-#top-navbar {
-  border-bottom: lightgray 0.5px solid;
-
-}
-
 #top-navbar-left {
   li {
-    padding: 0.7rem 0.8rem;
-    border-right: lightgray 0.5px solid;
+    border-right: $border-gray;
   }
 }
 
 #top-navbar-right {
-  li {
-    padding: 0.7rem 0.8rem;
+  li:hover {
+    border-bottom: $border-thick;
   }
 }
 
 #second-navbar {
-  border-bottom: lightgray 0.5px solid;
-  padding: 0.9rem 1.2rem;
+  padding: 0 1.2rem;
 
   img {
     height: 1.4rem;
   }
 
   li {
-    padding: 0.5rem 0.8rem;
+    padding: 1.3rem 0.8rem;
+    &:hover {
+      border-bottom: $border-thick;
+    }
   }
 
   input {

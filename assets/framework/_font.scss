@@ -51,6 +51,10 @@ h6 {
   }
 }
 
+.text-uppercase {
+  text-transform: uppercase;
+}
+
 .text-capitalize {
   text-transform: capitalize;
 }
@@ -58,6 +62,12 @@ h6 {
 .link-no-decoration {
   a {
     text-decoration: none;
+  }
+}
+
+.link-decoration {
+  a:hover {
+    text-decoration: underline;
   }
 }
 
@@ -75,8 +85,4 @@ h6 {
   a {
     color: black;
   }
-
-  a:hover {
-  text-decoration: underline;
-}
 }

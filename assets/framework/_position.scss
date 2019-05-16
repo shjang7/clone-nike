@@ -1,15 +1,15 @@
-.position-relative {
-  position: relative;
-}
-
-.position-absolute {
-  position: absolute;
-}
-
-.position-static {
-  position: static;
-}
-
-.position-fixed {
-  position: fixed;
+.position- {
+  &relative {
+    position: relative;
+  }
+  &absolute {
+    position: absolute;
+  }
+  &static {
+    position: static;
+  }
+  &fixed {
+    position: fixed;
+    z-index: 999;
+  }
 }

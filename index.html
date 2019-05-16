@@ -17,7 +17,7 @@
     <header class="position-fixed w-100 bg-white mb-3 link-no-decoration ">
       <div
         id="top-navbar"
-        class="d-flex jusitify-content-between font-sm-3 link-gray  "
+        class="d-flex jusitify-content-between font-sm-3 link-gray border-bottom-gray"
       >
         <ul id="top-navbar-left" class="d-flex px-2 ">
           <li>
@@ -68,13 +68,13 @@
       </div>
       <div
         id="second-navbar"
-        class="d-flex jusitify-content-between align-items-center link-black"
+        class="d-flex jusitify-content-between align-items-center link-black border-bottom-gray"
       >
         <a href="#">
           <img src="./assets/images/nike-logo.svg" alt="" />
         </a>
 
-        <ul class="d-flex font-condensed">
+        <ul class="d-flex font-condensed text-uppercase">
           <li>
             <a href="#">
               New Releases
@@ -98,28 +98,28 @@
       </div>
     </header>
     <main class="px-4">
-      <div class="d-flex justify-content-center mb-4" id="top-img">
-        <img
-          class="w-100 d-none d-md-block"
+      <div class="card-for-overlay d-flex justify-content-center mb-4 position-relative" id="top-img">
+        <div class="card-img"></div>
+        <!--img
+          class="card-img w-100 d-none d-md-block fit-cover"
           src="./assets/images/top-img.png"
         />
         <img
-          class="w-100 d-block d-md-none"
+          class="card-img w-100 d-block d-md-none fit-cover"
           src="./assets/images/top-img-sm.png"
-        />
+        /-->
         <div
-          class="position-absolute w-100 h-100 text-white
-              d-flex flex-column justify-content-end overlay m-5 p-5"
-        >
-          <div class="font-sm-4">
-            Vitae vocibus at eos. Nulla graeco persecuti at nec.
+          class="card-overlay text-white d-flex flex-column justify-content-end overlay px-5 py-5">
+          <div class="card-text">
+            In Alex Morgan’s Own Words
           </div>
-          <h3 class="font-weight-max font-condensed">
-            Vitae vocibus at eos. Nulla graeco persecuti at nec.
-          </h3>
-          <h3 class="">
-            Vitae vocibus at eos. Nulla graeco persecuti at nec.
-          </h3>
+          <div class="card-title font-condensed">
+            “I’M LOOKING INTO THE FUTURE”
+          </div>
+          <div class="d-flex text-capitalize">
+            <button type="button" class="card-button">read more</button>
+            <button type="button" class="card-button">shop</button>
+          </div>
         </div>
       </div>
       <section id="top-picks" class="my-3">

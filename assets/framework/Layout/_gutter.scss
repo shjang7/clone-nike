@@ -1,6 +1,10 @@
 $gutter: 0.5;
 
 @for $i from 0 through 5 {
+  .p-#{$i} {
+    padding-left: $i*$gutter*1rem;
+    padding-right: $i*$gutter*1rem;
+  }
   .px-#{$i} {
     padding-left: $i*$gutter*1rem;
     padding-right: $i*$gutter*1rem;
