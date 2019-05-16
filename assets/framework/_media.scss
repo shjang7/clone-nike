@@ -1,8 +1,13 @@
 
 
 @mixin screen-only($val) {
+  @if $val == xs {
+    @media (min-width: 420px) {
+      @content;
+    }
+  }
   @if $val == sm {
-    @media (max-width: 767.98px) {
+    @media (min-width: 576px) {
       @content;
     }
   }

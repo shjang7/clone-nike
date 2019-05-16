@@ -9,6 +9,8 @@
     -> after finish, maybe we can change one scrolling
 9. remove temp comment, temp color, temp bg?
 
++ tomorrow : link-gray -> link-gray-black, link-gray-white
+
 
 
     /*
