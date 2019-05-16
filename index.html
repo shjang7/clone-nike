@@ -17,7 +17,7 @@
     <header class="position-fixed w-100 bg-white mb-3 link-no-decoration ">
       <div
         id="top-navbar"
-        class="d-flex jusitify-content-between font-sm-3 link-gray border-bottom-gray"
+        class="d-none d-lg-flex jusitify-content-between font-sm-3 link-gray border-bottom-gray"
       >
         <ul id="top-navbar-left" class="d-flex px-2 ">
           <li>
@@ -43,7 +43,7 @@
           </li>
         </ul>
 
-        <ul id="top-navbar-right" class="d-none d-lg-flex px-2 ">
+        <ul id="top-navbar-right" class="d-lg-flex px-2 ">
           <li>
             <a href="#">
               Join / Log In To NikePlus Account
@@ -75,7 +75,7 @@
         </a>
 
         <ul
-          class="col-6 d-lg-flex d--sm-none justify-content-center font-condensed text-uppercase"
+          class="col-6 d-lg-flex d-none justify-content-center font-condensed text-uppercase"
         >
           <li>
             <a href="#">
@@ -95,13 +95,38 @@
         </ul>
 
         <form
-          class="col-3 d-lg-flex d-sm-none justify-content-end"
+          class="col-3 d-lg-flex d-none justify-content-end"
           action="submit"
         >
           <input type="text" placeholder="Search" class="font-sm-4" />
         </form>
+
+        <ul class="d-flex d-lg-none jusitify-content-between">
+          <li>
+            <a href="#"> <i class="fas fa-search"></i></a>
+          </li>
+          <li>
+            <a href="#"> <i class="fas fa-shopping-cart"></i></a>
+          </li>
+          <li>
+            <a href="#"> <i class="fas fa-bars"></i> </a>
+          </li>
+        </ul>
       </div>
     </header>
+
+    <div
+      id="message-bar"
+      class="bg-light w-100 d-flex flex-column  align-items-center  link-black"
+    >
+      <h6 class="font-weight-bolder py-1">
+        GET FREE SHIPPING TODAY
+      </h6>
+      <a href="#" class="font-sm-4 pb-2">
+        Join now to activate your NikePlus member benefits.
+      </a>
+    </div>
+
     <main class="px-4">
       <div
         class="card-for-overlay d-flex justify-content-center mb-4 position-relative"
@@ -183,6 +208,96 @@
         </div>
       </div>
     </main>
-    <footer></footer>
+
+    <footer class="w-100 bg-black text-white sample-h">
+      <div
+        id="footer-links"
+        class="border-bottom-gray d-flex jusitify-content-between font-sm-4"
+      >
+        <div class="d-flex">
+          <ul id="site-links" class="col-md-4">
+            <li>gift cards</li>
+            <li>gift cards</li>
+            <li>gift cards</li>
+            <li>gift cards</li>
+            <li>gift cards</li>
+            <li>gift cards</li>
+            <li>gift cards</li>
+          </ul>
+
+          <ul id="site-help" class="col-md-4">
+            <li>gift cards</li>
+            <li>gift cards</li>
+            <li>gift cards</li>
+            <li>gift cards</li>
+            <li>gift cards</li>
+            <li>gift cards</li>
+            <li>gift cards</li>
+          </ul>
+
+          <ul id="site-about" class="col-md-4">
+            <li>gift cards</li>
+            <li>gift cards</li>
+            <li>gift cards</li>
+            <li>gift cards</li>
+            <li>gift cards</li>
+            <li>gift cards</li>
+            <li>gift cards</li>
+          </ul>
+        </div>
+
+        <ul id="site-social" class="col-md-2 d-flex">
+          <li>
+            <a href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div
+        id="footer-copyright"
+        class="d-flex jusitify-content-between font-sm-1 link-gray"
+      >
+        <ul class="d-flex">
+          <li>
+            <img src="./assets/images/us-sml.png" alt="" />
+          </li>
+          <li>© 2019 Nike, Inc. All Rights Reserved</li>
+        </ul>
+
+        <ul class="d-flex">
+          <li>
+            <a href="#">
+              Guides
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Terms of Use
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Nike Private Policy
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
