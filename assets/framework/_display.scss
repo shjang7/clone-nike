@@ -1,13 +1,16 @@
-
-$display-style: "flex", "block", "none";
+$display-style: "flex",
+"block",
+"none";
 
 @mixin display-generator($size) {
   @for $i from 0 to length($display-style) {
-    @if $size == sm {
+    @if $size==sm {
       .d-#{nth($display-style,$i+1)} {
         display: #{nth($display-style,$i+1)};
       }
-    } @else {
+    }
+
+    @else {
       .d-#{$size}-#{nth($display-style,$i+1)} {
         display: #{nth($display-style,$i+1)};
       }
