@@ -4,9 +4,10 @@ $default-font: "Raleway",
 sans-serif;
 $condensed-font: "PT Sans Narrow",
 sans-serif;
+$font-size: 18;
 
 body {
-  font: 18px/1.2 $default-font;
+  font: $font-size*1px/1.2 $default-font;
 }
 
 .font-condensed {
@@ -57,49 +58,4 @@ h6 {
 
 .text-capitalize {
   text-transform: capitalize;
-}
-
-.link-no-decoration {
-  a {
-    text-decoration: none;
-  }
-}
-
-.link-decoration {
-  a:hover {
-    text-decoration: underline;
-  }
-}
-
-.link-gray {
-  a {
-    color: gray;
-  }
-
-  a:hover {
-    color: black;
-  }
-}
-
-.link-white {
-  a {
-    color: white;
-  }
-
-}
-
-.link-gray-white {
-  a {
-    color: gray;
-  }
-
-  a:hover {
-    color: white;
-  }
-}
-
-.link-black {
-  a {
-    color: black;
-  }
 }

@@ -48,3 +48,9 @@ $display-style: "flex",
 .align-items-center {
   align-items: center;
 }
+
+.justify-content-md-start {
+  @include screen-only(md) {
+    justify-content: flex-start;
+  }
+}
