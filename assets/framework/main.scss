@@ -26,12 +26,35 @@ $border-thick: 2px black solid;
   }
 }
 
+@mixin overflow-calculator($num, $width) {
+  width: 1/3*$num*100%;
+  min-width: ($num*$width+$gutter*($num+(-1)))*1rem;
+}
+
+@mixin bg-img($source-sm,$source-md) {
+  background: #aaf url($source-sm) top/cover no-repeat;
+  @include screen-only(md) {
+    background: #aaf url($source-md) top/cover no-repeat;
+  }
+}
+
+
 ul li {
   padding: 0.7rem 0.8rem;
 }
 
 #footer-links li {
   padding: 0.4rem 0.7rem;
+}
+
+#site-help,
+#site-about {
+  .title {
+    padding: 0.4rem 0.7rem;
+    @include screen-only(sm) {
+      padding: 1rem 0.7rem 0;
+    }
+  }
 }
 
 
@@ -50,6 +73,10 @@ main {
     padding: 0 2rem;
     margin: 0 auto;
   }
+}
+
+.content-box {
+  box-sizing: content-box;
 }
 
 .sample-bg-1 {
@@ -121,13 +148,6 @@ button {
   margin-bottom: 1rem;
 }
 
-@mixin bg-img($source-sm,$source-md) {
-  background: #aaf url($source-sm) top/cover no-repeat;
-  @include screen-only(md) {
-    background: #aaf url($source-md) top/cover no-repeat;
-  }
-}
-
 
 #top-img .card-img {
   @include card-img-height;
@@ -187,15 +207,6 @@ button {
 
 #trend-bottom img {
   width: 100%;
-}
-
-@mixin overflow-calculator($num, $width) {
-  width: 1/3*$num*100%;
-  min-width: ($num*$width+$gutter*($num+(-1)))*1rem;
-}
-
-.content-box {
-  box-sizing: content-box;
 }
 
 #top-picks {

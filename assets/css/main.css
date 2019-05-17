@@ -1290,6 +1290,14 @@ ul li {
 #footer-links li {
   padding: 0.4rem 0.7rem; }
 
+#site-help .title,
+#site-about .title {
+  padding: 0.4rem 0.7rem; }
+  @media (max-width: 647.9px) {
+    #site-help .title,
+    #site-about .title {
+      padding: 1rem 0.7rem 0; } }
+
 body {
   overflow-x: hidden; }
 
@@ -1303,6 +1311,9 @@ main {
     main {
       padding: 0 2rem;
       margin: 0 auto; } }
+
+.content-box {
+  box-sizing: content-box; }
 
 .sample-bg-1 {
   background-color: #03e; }
@@ -1420,9 +1431,6 @@ button {
 
 #trend-bottom img {
   width: 100%; }
-
-.content-box {
-  box-sizing: content-box; }
 
 #top-picks .card-group {
   width: 200%;
