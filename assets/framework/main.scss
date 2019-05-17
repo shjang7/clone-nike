@@ -20,6 +20,7 @@ $border-thick: 2px black solid;
 
 @mixin card-img-height {
   height: 500/$font-size*1rem;
+
   @include screen-only(md) {
     height: 700/$font-size*1rem;
   }
@@ -131,26 +132,37 @@ button {
 }
 
 
-#trending-now .left { //card-img
+#trending-now .left {
+  //card-img
   @include card-img-height;
   background: #aaf url(./../images/xwdqs9s0uka415vqfm4a_result.png) top/cover no-repeat;
 
   @include screen-only(md) {
-      background: #aaf url(./../images/c9sfmrrqd5c25xzrcg5l_result.png) top/cover no-repeat;
+    background: #aaf url(./../images/c9sfmrrqd5c25xzrcg5l_result.png) top/cover no-repeat;
   }
 }
 
-#trending-now .right { //card-img
+#trending-now .right {
+  //card-img
   @include card-img-height;
   background: #aaf url(./../images/skdwb3nydewupi9oklbw_result.png) top/cover no-repeat;
 
   @include screen-only(md) {
-      background: #aaf url(./../images/sxbzvauvpqjrz5vqj5zs_result.png) top/cover no-repeat;
+    background: #aaf url(./../images/sxbzvauvpqjrz5vqj5zs_result.png) top/cover no-repeat;
   }
 }
 
 #best-seller .card-overlay {
   padding: 1rem;
+}
+
+#best-seller .card-img {
+  height: 100%;
+
+  @include screen-only(sm) {
+    // padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
 }
 
 #trend-bottom img {
@@ -168,7 +180,8 @@ button {
 
 #top-picks {
   .card-group {
-    @include overflow-calculator(6,340/18);
+    @include overflow-calculator(6, 340/18);
+
     .card {
       min-width: 340/18*1rem;
     }
@@ -195,7 +208,7 @@ button {
   }
 
   li {
-    padding: 1.3rem 0.8rem;
+    padding: 1.3rem 1rem;
 
     &:hover {
       border-bottom: $border-thick;
@@ -209,9 +222,6 @@ button {
   }
 
 }
-
-
-
 
 
 #message-bar {
