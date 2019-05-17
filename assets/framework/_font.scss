@@ -81,6 +81,23 @@ h6 {
   }
 }
 
+.link-white {
+  a {
+    color: white;
+  }
+
+}
+
+.link-gray-white {
+  a {
+    color: gray;
+  }
+
+  a:hover {
+    color: white;
+  }
+}
+
 .link-black {
   a {
     color: black;
