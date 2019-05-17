@@ -59,3 +59,9 @@ typings/
 
 # next.js build output
 .next
+
+.DS_Store
+
+assets/css/main.map
+./assets/css/main.map
+./assets/css/main.css.map

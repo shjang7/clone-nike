@@ -1,0 +1,35 @@
+
+@import "gutter";
+
+.row {
+  margin-left: -$gutter*1rem;
+  margin-right: -$gutter*1rem;
+}
+
+[class*=col-] {
+  padding-left: $gutter*1rem;
+  padding-right: $gutter*1rem;
+}
+
+.no-gutter {
+  [class*=col-] {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    width: 100*$i/12*1%;
+  }
+  .col-md-#{$i} {
+    @include screen-only(md) {
+      width: 100*$i/12*1%;
+    }
+  }
+  .col-lg-#{$i} {
+    @include screen-only(lg) {
+      width: 100*$i/12*1%;
+    }
+  }
+}

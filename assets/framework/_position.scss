@@ -1,0 +1,15 @@
+.position- {
+  &relative {
+    position: relative;
+  }
+  &absolute {
+    position: absolute;
+  }
+  &static {
+    position: static;
+  }
+  &fixed {
+    position: fixed;
+    z-index: 999;
+  }
+}

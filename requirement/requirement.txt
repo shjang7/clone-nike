@@ -1,0 +1,10 @@
+1. use 12-column grid system.
+2. framework includes css reset
+3. a fixed number of grids separated by “gutters”
+4. a way to make new rows
+5. default values for the font properties of elements
+6. it works on mobile, tablet, pc screen? -> md,lg
+7. every elements not overlay without expectation
+8. change scrolling part to grid
+    -> after finish, maybe we can change one scrolling
+9. remove temp comment, temp color, temp bg from html

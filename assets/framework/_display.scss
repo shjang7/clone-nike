@@ -1,0 +1,56 @@
+$display-style: "flex",
+"block",
+"none";
+
+@mixin display-generator($size) {
+  @for $i from 0 to length($display-style) {
+    @if $size==sm {
+      .d-#{nth($display-style,$i+1)} {
+        display: #{nth($display-style,$i+1)};
+      }
+    }
+    @else {
+      @include screen-only($size) {
+        .d-#{$size}-#{nth($display-style,$i+1)} {
+          display: #{nth($display-style,$i+1)};
+        }
+      }
+    }
+  }
+}
+
+@include display-generator(sm);
+@include display-generator(md);
+@include display-generator(lg);
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-md-row {
+  @include screen-only(md) {
+    flex-direction: row;
+  }
+}
+
+.jusitify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-end {
+  justify-content: flex-end;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-md-start {
+  @include screen-only(md) {
+    justify-content: flex-start;
+  }
+}

@@ -1,0 +1,28 @@
+@mixin screen-only($val) {
+
+  @if $val==sm {
+    @media (max-width: 647.9px) {
+      @content;
+    }
+  }
+
+  @if $val==md {
+    @media (min-width: 648px) {
+      @content;
+    }
+  }
+
+  @if $val==lg {
+    @media (min-width: 1024px) {
+      @content;
+    }
+  }
+}
+
+@mixin screen-between($start, $end) {
+  @if $start==md and $end==lg {
+    @media (min-width: 648px) and (max-width: 1024px) {
+      @content;
+    }
+  }
+}
