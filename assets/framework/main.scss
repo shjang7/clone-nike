@@ -20,6 +20,7 @@ $border-thick: 2px black solid;
 
 @mixin card-img-height {
   height: 500/$font-size*1rem;
+
   @include screen-only(md) {
     height: 700/$font-size*1rem;
   }
@@ -139,12 +140,14 @@ button {
 }
 
 
-#trending-now .left { //card-img
+#trending-now .left {
+  //card-img
   @include card-img-height;
   @include bg-img('./../images/xwdqs9s0uka415vqfm4a_result.png','./../images/c9sfmrrqd5c25xzrcg5l_result.png');
 }
 
-#trending-now .right { //card-img
+#trending-now .right {
+  //card-img
   @include card-img-height;
   @include bg-img('./../images/skdwb3nydewupi9oklbw_result.png','./../images/sxbzvauvpqjrz5vqj5zs_result.png');
 }
@@ -167,6 +170,15 @@ button {
   }
 }
 
+#best-seller .card-img {
+  height: 100%;
+
+  @include screen-only(sm) {
+    // padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
 #trend-bottom img {
   width: 100%;
 }
@@ -182,7 +194,8 @@ button {
 
 #top-picks {
   .card-group {
-    @include overflow-calculator(6,340/18);
+    @include overflow-calculator(6, 340/18);
+
     .card {
       min-width: 340/18*1rem;
     }
@@ -218,7 +231,7 @@ button {
   }
 
   li {
-    padding: 1.3rem 0.8rem;
+    padding: 1.3rem 1rem;
 
     &:hover {
       border-bottom: $border-thick;
@@ -230,7 +243,6 @@ button {
     width: 12rem;
     padding: 0.3rem;
   }
-
 }
 
 #message-bar {
@@ -239,5 +251,4 @@ button {
   @include screen-only(lg) {
     padding-top: $header-size-lg * 1rem;
   }
-
 }

@@ -1406,6 +1406,12 @@ button {
 #best-seller img {
   height: 100%; }
 
+#best-seller .card-img {
+  height: 100%; }
+  @media (max-width: 647.9px) {
+    #best-seller .card-img {
+      padding-bottom: 1rem; } }
+
 #trend-bottom img {
   width: 100%; }
 
@@ -1435,7 +1441,7 @@ button {
   #second-navbar img {
     height: 1.4rem; }
   #second-navbar li {
-    padding: 1.3rem 0.8rem; }
+    padding: 1.3rem 1rem; }
     #second-navbar li:hover {
       border-bottom: 2px black solid; }
   #second-navbar input {
