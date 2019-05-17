@@ -1296,6 +1296,14 @@ body {
 * {
   box-sizing: border-box; }
 
+main {
+  padding: 0 0.5rem; }
+  @media (min-width: 1024px) {
+    main {
+      padding: 0 2rem;
+      width: 100rem;
+      margin: 0 auto; } }
+
 .sample-bg-1 {
   background-color: #03e; }
 
@@ -1350,46 +1358,53 @@ button {
 
 #top-img .card-img {
   height: 27.7777777778rem;
-  background: #aaf url(./../images/top-img-sm.png) 100% 20%/cover no-repeat; }
+  background: #aaf url("./../images/atr0hpe67umu3e18w0tj_result.png") top/cover no-repeat; }
   @media (min-width: 648px) {
     #top-img .card-img {
       height: 38.8888888889rem; } }
   @media (min-width: 648px) {
     #top-img .card-img {
-      background: #aaf url(./../images/top-img.png) 50% 100%/cover no-repeat; } }
+      background: #aaf url("./../images/oqr4shlwt45mlpjxhpti_result.png") top/cover no-repeat; } }
 
 #trend-top .card-img {
   height: 27.7777777778rem;
-  background: #aaf url(./../images/zzgm5necqg3lvbjp2sj5_result.png) 100%/cover no-repeat; }
+  background: #aaf url("./../images/zzgm5necqg3lvbjp2sj5_result.png") top/cover no-repeat; }
   @media (min-width: 648px) {
     #trend-top .card-img {
       height: 38.8888888889rem; } }
   @media (min-width: 648px) {
     #trend-top .card-img {
-      background: #aaf url(./../images/wvfvvgzzbvtpmqeutpof_result.png) 50%/cover no-repeat; } }
+      background: #aaf url("./../images/wvfvvgzzbvtpmqeutpof_result.png") top/cover no-repeat; } }
 
 #trending-now .left {
   height: 27.7777777778rem;
-  background: #aaf url(./../images/xwdqs9s0uka415vqfm4a_result.png) top/cover no-repeat; }
+  background: #aaf url("./../images/xwdqs9s0uka415vqfm4a_result.png") top/cover no-repeat; }
   @media (min-width: 648px) {
     #trending-now .left {
       height: 38.8888888889rem; } }
   @media (min-width: 648px) {
     #trending-now .left {
-      background: #aaf url(./../images/c9sfmrrqd5c25xzrcg5l_result.png) top/cover no-repeat; } }
+      background: #aaf url("./../images/c9sfmrrqd5c25xzrcg5l_result.png") top/cover no-repeat; } }
 
 #trending-now .right {
   height: 27.7777777778rem;
-  background: #aaf url(./../images/skdwb3nydewupi9oklbw_result.png) top/cover no-repeat; }
+  background: #aaf url("./../images/skdwb3nydewupi9oklbw_result.png") top/cover no-repeat; }
   @media (min-width: 648px) {
     #trending-now .right {
       height: 38.8888888889rem; } }
   @media (min-width: 648px) {
     #trending-now .right {
-      background: #aaf url(./../images/sxbzvauvpqjrz5vqj5zs_result.png) top/cover no-repeat; } }
+      background: #aaf url("./../images/sxbzvauvpqjrz5vqj5zs_result.png") top/cover no-repeat; } }
+
+#trending-now .card {
+  padding-bottom: 0.5rem; }
 
 #best-seller .card-overlay {
   padding: 1rem; }
+#best-seller .card {
+  padding-bottom: 0.5rem; }
+#best-seller img {
+  height: 100%; }
 
 #trend-bottom img {
   width: 100%; }
@@ -1401,6 +1416,12 @@ button {
   width: 200%;
   min-width: 115.8333333333rem; }
   #top-picks .card-group .card {
+    min-width: 18.8888888889rem; }
+
+#trend-bottom .card-group {
+  width: 266.6666666667%;
+  min-width: 154.6111111111rem; }
+  #trend-bottom .card-group .card {
     min-width: 18.8888888889rem; }
 
 #top-navbar-left li {

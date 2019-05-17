@@ -42,6 +42,15 @@ body {
   box-sizing: border-box;
 }
 
+main {
+  padding: 0 0.5rem;
+  @include screen-only(lg) {
+    padding: 0 2rem;
+    width: 100rem;
+    margin: 0 auto;
+  }
+}
+
 .sample-bg-1 {
   background-color: #03e;
 }
@@ -111,46 +120,51 @@ button {
   margin-bottom: 1rem;
 }
 
+@mixin bg-img($source-sm,$source-md) {
+  background: #aaf url($source-sm) top/cover no-repeat;
+  @include screen-only(md) {
+    background: #aaf url($source-md) top/cover no-repeat;
+  }
+}
+
 
 #top-img .card-img {
   @include card-img-height;
-  background: #aaf url(./../images/top-img-sm.png) 100% 20%/cover no-repeat;
-
-  @include screen-only(md) {
-    background: #aaf url(./../images/top-img.png) 50% 100%/cover no-repeat;
-  }
+  @include bg-img('./../images/atr0hpe67umu3e18w0tj_result.png','./../images/oqr4shlwt45mlpjxhpti_result.png');
 }
 
 #trend-top .card-img {
   @include card-img-height;
-  background: #aaf url(./../images/zzgm5necqg3lvbjp2sj5_result.png) 100%/cover no-repeat;
-
-  @include screen-only(md) {
-    background: #aaf url(./../images/wvfvvgzzbvtpmqeutpof_result.png) 50%/cover no-repeat;
-  }
+  @include bg-img('./../images/zzgm5necqg3lvbjp2sj5_result.png','./../images/wvfvvgzzbvtpmqeutpof_result.png');
 }
 
 
 #trending-now .left { //card-img
   @include card-img-height;
-  background: #aaf url(./../images/xwdqs9s0uka415vqfm4a_result.png) top/cover no-repeat;
-
-  @include screen-only(md) {
-      background: #aaf url(./../images/c9sfmrrqd5c25xzrcg5l_result.png) top/cover no-repeat;
-  }
+  @include bg-img('./../images/xwdqs9s0uka415vqfm4a_result.png','./../images/c9sfmrrqd5c25xzrcg5l_result.png');
 }
 
 #trending-now .right { //card-img
   @include card-img-height;
-  background: #aaf url(./../images/skdwb3nydewupi9oklbw_result.png) top/cover no-repeat;
+  @include bg-img('./../images/skdwb3nydewupi9oklbw_result.png','./../images/sxbzvauvpqjrz5vqj5zs_result.png');
+}
 
-  @include screen-only(md) {
-      background: #aaf url(./../images/sxbzvauvpqjrz5vqj5zs_result.png) top/cover no-repeat;
+#trending-now {
+  .card {
+    padding-bottom: $gutter*1rem;
   }
 }
 
-#best-seller .card-overlay {
-  padding: 1rem;
+#best-seller {
+  .card-overlay {
+    padding: 1rem;
+  }
+  .card {
+    padding-bottom: $gutter*1rem;
+  }
+  img {
+    height: 100%;
+  }
 }
 
 #trend-bottom img {
@@ -169,6 +183,15 @@ button {
 #top-picks {
   .card-group {
     @include overflow-calculator(6,340/18);
+    .card {
+      min-width: 340/18*1rem;
+    }
+  }
+}
+
+#trend-bottom {
+  .card-group {
+    @include overflow-calculator(8,340/18);
     .card {
       min-width: 340/18*1rem;
     }
@@ -209,10 +232,6 @@ button {
   }
 
 }
-
-
-
-
 
 #message-bar {
   padding-top: $header-size-md * 1rem;
