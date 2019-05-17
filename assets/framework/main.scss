@@ -51,9 +51,6 @@ ul li {
 #site-about {
   .title {
     padding: 0.4rem 0.7rem;
-    @include screen-only(sm) {
-      padding: 1rem 0.7rem 0;
-    }
   }
 }
 

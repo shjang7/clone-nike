@@ -1293,10 +1293,6 @@ ul li {
 #site-help .title,
 #site-about .title {
   padding: 0.4rem 0.7rem; }
-  @media (max-width: 647.9px) {
-    #site-help .title,
-    #site-about .title {
-      padding: 1rem 0.7rem 0; } }
 
 body {
   overflow-x: hidden; }
