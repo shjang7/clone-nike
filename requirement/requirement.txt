@@ -7,21 +7,4 @@
 7. every elements not overlay without expectation
 8. change scrolling part to grid
     -> after finish, maybe we can change one scrolling
-9. remove temp comment, temp color, temp bg?
-
-+ tomorrow : link-gray -> link-gray-black, link-gray-white
-
-
-
-    /*
-    @media (min-width: 576px) { ... }
-
-    // Medium devices (tablets, 768px and up)
-    @media (min-width: 768px) { ... }
-
-    // Large devices (desktops, 992px and up)
-    @media (min-width: 992px) { ... }
-
-    // Extra large devices (large desktops, 1200px and up)
-    @media (min-width: 1200px) { ... }
-    */
+9. remove temp comment, temp color, temp bg from html
