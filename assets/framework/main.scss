@@ -45,9 +45,9 @@ body {
 
 main {
   padding: 0 0.5rem;
+  max-width: 100rem;
   @include screen-only(lg) {
     padding: 0 2rem;
-    width: 100rem;
     margin: 0 auto;
   }
 }
@@ -167,6 +167,9 @@ button {
   }
   img {
     height: 100%;
+    @include screen-only(lg) {
+      max-height: 38rem;
+    }
   }
 }
 

@@ -1297,11 +1297,11 @@ body {
   box-sizing: border-box; }
 
 main {
-  padding: 0 0.5rem; }
+  padding: 0 0.5rem;
+  max-width: 100rem; }
   @media (min-width: 1024px) {
     main {
       padding: 0 2rem;
-      width: 100rem;
       margin: 0 auto; } }
 
 .sample-bg-1 {
@@ -1405,6 +1405,9 @@ button {
   padding-bottom: 0.5rem; }
 #best-seller img {
   height: 100%; }
+  @media (min-width: 1024px) {
+    #best-seller img {
+      max-height: 38rem; } }
 
 #best-seller .card-img {
   height: 100%; }
