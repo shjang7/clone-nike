@@ -160,7 +160,10 @@ button {
 
 #best-seller {
   .card-overlay {
-    padding: 1rem;
+    padding: 3rem 2rem;
+    @include screen-only(md) {
+      padding: 1rem;
+    }
   }
   .card {
     padding-bottom: $gutter*1rem;

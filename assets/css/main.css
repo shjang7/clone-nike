@@ -1400,7 +1400,10 @@ button {
   padding-bottom: 0.5rem; }
 
 #best-seller .card-overlay {
-  padding: 1rem; }
+  padding: 3rem 2rem; }
+  @media (min-width: 648px) {
+    #best-seller .card-overlay {
+      padding: 1rem; } }
 #best-seller .card {
   padding-bottom: 0.5rem; }
 #best-seller img {
