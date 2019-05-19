@@ -14,36 +14,36 @@
     <title>Clone Nike.com</title>
   </head>
   <body>
-    <header class="position-fixed w-100 bg-white mb-3 link-no-decoration ">
-      <div
-        id="top-navbar"
-        class="d-none d-lg-flex jusitify-content-between font-sm-3 link-gray border-bottom-gray"
-      >
-        <ul id="top-navbar-left" class="d-flex">
+    <header class="bg-white position-fixed w-100 link-no-decoration">
+      <div id="top-navbar"
+          class="d-none d-lg-flex jusitify-content-between align-items-bottom font-sm-2 bg-white
+          link-gray-black border-bottom-gray">
+        <ul class="left d-flex">
           <li>
-            <a class="px-2" href="#">
+            <a href="#">
               NikePlus
             </a>
           </li>
           <li>
-            <a href="#" class="px-2 font-weight-bolder">
-              <i class="fas fa-running"></i>
-            </a>
-          </li>
-          <li>
             <a href="#">
-              Hurley
-              <i class="fas fa-football-ball font-weight-bolder px-1"></i>
+              <img class="logo" src="./assets/images/jump-man.png" alt="Nike Jordan"/>
             </a>
           </li>
           <li>
             <a href="#" class="font-weight-bolder">
-              CONVERSE >
+              Hurley
+              <img class="logo" src="./assets/images/hurley.jpg" alt="."/>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="font-weight-bolder">
+              CONVERSE
+              <img class="logo" src="./assets/images/converse-logo.png" alt=">"/>
             </a>
           </li>
         </ul>
 
-        <ul id="top-navbar-right" class="d-lg-flex">
+        <ul class="right d-lg-flex">
           <li>
             <a href="#">
               Join / Log In To NikePlus Account
@@ -66,17 +66,15 @@
           </li>
         </ul>
       </div>
-      <div
-        id="second-navbar"
-        class="d-flex jusitify-content-between align-items-center link-black border-bottom-gray"
-      >
-        <a class="col-3" href="#">
-          <img src="./assets/images/nike-logo.svg" alt="nike" />
+      <div id="second-navbar"
+        class="d-flex jusitify-content-between align-items-center
+        link-black bg-white border-bottom-gray">
+        <a class="col-lg-3" href="#">
+          <img class="nike-logo" src="./assets/images/nike-logo.svg" alt="nike" />
         </a>
 
-        <ul
-          class="col-6 d-lg-flex d-none justify-content-center font-condensed text-uppercase font-sm-5"
-        >
+        <ul class="mid-list col-lg-6 d-lg-flex d-none justify-content-center
+          font-condensed text-uppercase font-sm-5">
           <li>
             <a href="#">
               New Releases
@@ -94,14 +92,12 @@
           </li>
         </ul>
 
-        <form
-          class="col-3 d-lg-flex d-none justify-content-end"
-          action="submit"
-        >
+        <form class="search col-lg-3 d-none d-lg-flex justify-content-end"
+          action="submit">
           <input type="text" placeholder="Search" class="font-sm-4" />
         </form>
 
-        <ul class="d-flex d-lg-none jusitify-content-between">
+        <ul class="d-lg-none d-flex justify-content-end">
           <li>
             <a href="#"> <i class="fas fa-search"></i></a>
           </li>
@@ -115,28 +111,24 @@
       </div>
     </header>
 
-    <div
-      id="message-bar"
-      class="bg-light w-100 d-flex flex-column  align-items-center  link-black"
-    >
-      <h6 class="font-weight-bolder py-1">
+    <div id="message-bar"
+      class="bg-light w-100 d-flex flex-column  align-items-center link-black p-2">
+      <h6 class="font-weight-bolder pt-2">
         GET FREE SHIPPING TODAY
       </h6>
-      <a href="#" class="font-sm-4 pb-2">
+      <a href="#" class="font-sm-4">
         Join now to activate your NikePlus member benefits.
       </a>
     </div>
 
-    <main>
+    <main class="mx-1">
       <div class="card d-flex justify-content-center mb-4" id="top-img">
         <div class="card-img"></div>
-        <div
-          class="card-overlay text-white d-flex flex-column justify-content-end"
-        >
+        <div class="card-overlay text-white d-flex flex-column justify-content-end">
           <div class="card-overlay-text">
             In Alex Morgan’s Own Words
           </div>
-          <div class="card-overlay-title font-condensed mt-2 mb-2">
+          <div class="card-overlay-title font-condensed mt-2">
             “I’M LOOKING INTO THE FUTURE”
           </div>
           <div class="d-flex text-capitalize">
@@ -145,14 +137,14 @@
           </div>
         </div>
       </div>
-      <section id="top-picks" class="my-3">
+      <section id="top-picks" class="mt-3">
         <h5 class="header-title text-capitalize">top picks</h5>
         <div class="overflow-x-auto">
-          <section class="row d-flex card-group content-box">
+          <section class="row d-flex card-group pb-2 content-box">
             <h6 class="d-none">images</h6>
             <div class="col-lg-4 card">
               <img class="card-img w-100"
-                src="./assets/images/epic-react-flyknit-2-big-kids-running-shoe-xH4sJP.jpg"
+                src="./assets/images/epic-react-flyknit-2-mens-running-shoe-0KFRGP.webp"
                 alt="Flyknit"
               />
               <div class="card-body">
@@ -206,7 +198,7 @@
             <div class="col-lg-4 card">
               <img
                 class="card-img w-100"
-                src="./assets/images/epic-react-flyknit-2-big-kids-running-shoe-xH4sJP.jpg"
+                src="./assets/images/epic-react-flyknit-2-womens-running-shoe-5r9NpJ.webp"
                 alt="Flyknit"
               />
               <div class="card-body">
@@ -224,7 +216,7 @@
             <div class="col-lg-4 card">
               <img
                 class="card-img"
-                src="./assets/images/epic-react-flyknit-2-big-kids-running-shoe-xH4sJP.webp"
+                src="./assets/images/epic-react-flyknit-2-mens-running-shoe-0KFRGP_002.webp"
                 alt="Flyknit"
               />
               <div class="card-body">
@@ -242,7 +234,7 @@
             <div class="col-lg-4 card">
               <img
                 class="card-img"
-                src="./assets/images/epic-react-flyknit-2-mens-running-shoe-0KFRGP.jpg"
+                src="./assets/images/epic-react-flyknit-2-womens-running-shoe-5r9NpJ.jpg"
                 alt="Flyknit"
               />
               <div class="card-body">
@@ -260,37 +252,37 @@
           </section>
         </div>
       </section>
-      <div
-        class="card d-flex justify-content-center mb-4 link-no-decoration "
-        id="trend-top"
-      >
-        <div class="card-img"></div>
-        <div class="card-overlay text-white d-flex flex-column
-            justify-content-end justify-content-md-start">
-          <div class="card-overlay-title font-condensed text-uppercase">
-            The Tonal Trend
-          </div>
-          <div class="card-overlay-text">
-            Take monochromatic to the next level.
-          </div>
-          <div class="d-flex text-capitalize mt-4">
-            <button type="button" class="card-overlay-button">explore</button>
-            <button type="button" class="card-overlay-button">shop</button>
+      <section id="trend-top">
+        <h5 class="header-title">What To Wear Now</h5>
+        <div class="card d-flex justify-content-center link-no-decoration">
+          <div class="card-img"></div>
+          <div class="card-overlay text-white d-flex flex-column
+              justify-content-end justify-content-md-start">
+            <div class="card-overlay-title font-condensed text-uppercase">
+              The Tonal Trend
+            </div>
+            <div class="card-overlay-text mt-2">
+              Take monochromatic to the next level.
+            </div>
+            <div class="d-flex text-capitalize">
+              <button type="button" class="card-overlay-button">explore</button>
+              <button type="button" class="card-overlay-button">shop</button>
+            </div>
           </div>
         </div>
-      </div>
-      <section id="trend-bottom" class="my-3">
+      </section>
+      <section id="trend-bottom" class="mt-1">
         <h5 class="d-none title text-capitalize">
           trend images
         </h5>
         <div class="overflow-x-auto">
-          <section class="row d-flex content-box card-group">
+          <section class="row d-flex content-box card-group pb-2">
             <h6 class="d-none">image group</h6>
             <div class="col-lg-4 card">
               <img
                 class="card-img"
                 src="./assets/images/air-vapormax-flyknit-3-womens-shoe-DNFjMf.jpg"
-                alt="Flyknit"
+                alt="shoe"
               />
               <div class="card-body">
                 <div class="card-title">
@@ -308,7 +300,7 @@
               <img
                 class="card-img"
                 src="./assets/images/lv6lghgad9g6ir4wyxon_result.png"
-                alt="Flyknit"
+                alt="shoe"
               />
               <div class="card-body">
                 <div class="card-title">
@@ -326,7 +318,7 @@
               <img
                 class="card-img"
                 src="./assets/images/omy2xic7xgbknzxxcuqm_result.png"
-                alt="Flyknit"
+                alt="shoe"
               />
               <div class="card-body">
                 <div class="card-title">
@@ -343,8 +335,8 @@
             <div class="col-lg-4 card">
               <img
                 class="card-img"
-                src="./assets/images/air-vapormax-flyknit-3-womens-shoe-DNFjMf.jpg"
-                alt="Flyknit"
+                src="./assets/images/xdp5ihsdinhlsuwexops_result.png"
+                alt="shoe"
               />
               <div class="card-body">
                 <div class="card-title">
@@ -361,8 +353,8 @@
             <div class="col-lg-4 card">
               <img
                 class="card-img"
-                src="./assets/images/lv6lghgad9g6ir4wyxon_result.png"
-                alt="Flyknit"
+                src="./assets/images/tf1b81g1aqnwvx55nsbu_result.png"
+                alt="shoe"
               />
               <div class="card-body">
                 <div class="card-title">
@@ -379,15 +371,15 @@
             <div class="col-lg-4 card">
               <img
                 class="card-img"
-                src="./assets/images/omy2xic7xgbknzxxcuqm_result.png"
-                alt="Flyknit"
+                src="./assets/images/sm5emjs9yrrebkmgupjr_result.png"
+                alt="shoe"
               />
               <div class="card-body">
                 <div class="card-title">
                   Nike Sportswear Tech Pack
                 </div>
                 <div class="card-text">
-                  Women's Vest
+                  Women's Shoes
                 </div>
                 <div class="card-text">
                   $75
@@ -397,8 +389,8 @@
             <div class="col-lg-4 card">
               <img
                 class="card-img"
-                src="./assets/images/air-vapormax-flyknit-3-womens-shoe-DNFjMf.jpg"
-                alt="Flyknit"
+                src="./assets/images/r6baxwgyjke7dedowchv_result.png"
+                alt="shoe"
               />
               <div class="card-body">
                 <div class="card-title">
@@ -415,8 +407,8 @@
             <div class="col-lg-4 card">
               <img
                 class="card-img"
-                src="./assets/images/lv6lghgad9g6ir4wyxon_result.png"
-                alt="Flyknit"
+                src="./assets/images/lfv4qjob5rbnpj3olpdx_result.png"
+                alt="shoe"
               />
               <div class="card-body">
                 <div class="card-title">
@@ -434,34 +426,26 @@
         </div>
       </section>
       <section id="trending-now" class="link-no-decoration">
-        <h5 class="header-title">trending now</h5>
-        <div class="d-md-flex">
+        <h5 class="header-title text-capitalize">trending now</h5>
+        <div class="d-md-flex row">
           <div class="col-md-6 card d-flex">
             <div class="card-img left"></div>
             <div class="card-overlay text-white d-flex flex-column justify-content-end">
               <div class="card-overlay-text">
-                In Alex Morgan’s Own Words
-              </div>
-              <div class="card-overlay-title font-condensed mt-2 mb-2">
-                “I’M LOOKING INTO THE FUTURE”
+                NBA MVP Jerseys
               </div>
               <div class="d-flex text-capitalize">
-                <button type="button" class="card-overlay-button">read more</button>
                 <button type="button" class="card-overlay-button">shop</button>
               </div>
             </div>
           </div>
-          <div class="col-md-6 card d-flex justify-content-center">
+          <div class="col-md-6 card d-flex">
             <div class="card-img right"></div>
             <div class="card-overlay text-white d-flex flex-column justify-content-end">
               <div class="card-overlay-text">
-                In Alex Morgan’s Own Words
-              </div>
-              <div class="card-overlay-title font-condensed mt-2 mb-2">
-                “I’M LOOKING INTO THE FUTURE”
+                Nike Golf Championship Styles
               </div>
               <div class="d-flex text-capitalize">
-                <button type="button" class="card-overlay-button">read more</button>
                 <button type="button" class="card-overlay-button">shop</button>
               </div>
             </div>
@@ -470,7 +454,7 @@
       </section>
       <section id="best-seller" class="link-no-decoration">
         <h5 class="text-capitalize header-title">shop best sellers</h5>
-        <div class="d-md-flex">
+        <div class="d-md-flex row">
           <div class="col-md-4 card d-flex">
             <img class="card-img" src="./assets/images/vyw0r0jdsjfus2cnwwhh_result.png"
                 alt="shoes"/>
@@ -506,15 +490,12 @@
     </main>
 
     <footer class="w-100 bg-black text-white">
-      <div
-        id="footer-links"
-        class="border-bottom-darkergray d-md-flex jusitify-content-between font-sm-3 link-no-decoration py-4"
-      >
-        <div class="d-md-flex col-md-7">
-          <ul
-            id="site-links"
-            class="col-md-4 text-uppercase link-white font-condensed"
-          >
+      <div id="footer-links"
+        class="border-bottom-darkergray d-md-flex jusitify-content-between
+        font-sm-3 link-no-decoration py-4">
+        <div class="d-md-flex col-md-8">
+          <ul id="site-links"
+            class="col-md-4 text-uppercase link-white font-condensed">
             <li><a href="#">Gift cards</a></li>
             <li><a href="#">Student Discount</a></li>
             <li><a href="#">Military Discount</a></li>
@@ -551,10 +532,9 @@
           </div>
         </div>
 
-        <ul
-          id="site-social"
-          class="col-md-3 d-flex font-sm-5 link-gray-white justify-content-end"
-        >
+        <ul id="site-social"
+          class="col-md-4 d-flex font-sm-5 link-gray-white
+          justify-content-start justify-content-md-end mx-1">
           <li>
             <a href="#">
               <i class="fab fa-twitter"></i>
@@ -577,10 +557,9 @@
           </li>
         </ul>
       </div>
-      <div
-        id="footer-copyright"
-        class="d-md-flex jusitify-content-between font-sm-2 link-gray-white link-no-decoration"
-      >
+      <div id="footer-copyright"
+        class="d-md-flex jusitify-content-between
+        font-sm-2 link-gray-white link-no-decoration px-2 py-1">
         <ul class="d-md-flex">
           <li>
             <img src="./assets/images/us-sml.png" alt="U.S."/>

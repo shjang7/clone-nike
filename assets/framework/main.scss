@@ -1,22 +1,26 @@
 @import "reset";
 @import "font";
 @import "media";
+@import "display";
+@import "position";
+@import "color";
 @import "./Layout/gutter";
 @import "./Layout/grid";
 @import "./components/card";
 @import "./components/link";
-@import "display";
-@import "position";
-@import "color";
 
 /* customizing */
-
-$header-size-lg: 120/18;
-$header-size-md: 120/18/1.6;
+$header-size-lg-top: 2.7;
+$header-size-lg-bottom: 4.5;
+$header-size-sm: 3;
+$header-size-lg: $header-size-lg-top+$header-size-lg-bottom+(-0.1);
+$list-py: 0.4;
+$list-px: 0.8;
 $border-gray: lightgray 0.5px solid;
 $border-darkergray:#555 0.3px solid;
 $border-normal: 1px black solid;
 $border-thick: 2px black solid;
+$overflow-img-minw: 340/$font-size;
 
 @mixin card-img-height {
   height: 500/$font-size*1rem;
@@ -27,33 +31,18 @@ $border-thick: 2px black solid;
 }
 
 @mixin overflow-calculator($num, $width) {
-  width: 1/3*$num*100%;
-  min-width: ($num*$width+$gutter*($num+(-1)))*1rem;
+  width: $num*34%;
+  min-width: ($num*$width+2*$gutter*($num+(-1)))*1rem;
 }
 
 @mixin bg-img($source-sm,$source-md) {
-  background: #aaf url($source-sm) top/cover no-repeat;
+  @include screen-only(sm) {
+    background: #aaf url($source-sm) top/cover no-repeat;
+  }
   @include screen-only(md) {
     background: #aaf url($source-md) top/cover no-repeat;
   }
 }
-
-
-ul li {
-  padding: 0.7rem 0.8rem;
-}
-
-#footer-links li {
-  padding: 0.4rem 0.7rem;
-}
-
-#site-help,
-#site-about {
-  .title {
-    padding: 0.4rem 0.7rem;
-  }
-}
-
 
 body {
   overflow-x: hidden;
@@ -64,12 +53,19 @@ body {
 }
 
 main {
-  padding: 0 0.5rem;
   max-width: 100rem;
+  padding: 0 1rem 1rem;
+  @include screen-only(md) {
+    padding: 0 1rem 2rem;
+  }
   @include screen-only(lg) {
-    padding: 0 2rem;
+    padding: 0 2rem 4rem;
     margin: 0 auto;
   }
+}
+
+ul li {
+  padding: $list-py*1rem $list-px*1rem;
 }
 
 .content-box {
@@ -145,7 +141,6 @@ button {
   margin-bottom: 1rem;
 }
 
-
 #top-img .card-img {
   @include card-img-height;
   @include bg-img('./../images/atr0hpe67umu3e18w0tj_result.png','./../images/oqr4shlwt45mlpjxhpti_result.png');
@@ -156,15 +151,12 @@ button {
   @include bg-img('./../images/zzgm5necqg3lvbjp2sj5_result.png','./../images/wvfvvgzzbvtpmqeutpof_result.png');
 }
 
-
 #trending-now .left {
-  //card-img
   @include card-img-height;
   @include bg-img('./../images/xwdqs9s0uka415vqfm4a_result.png','./../images/c9sfmrrqd5c25xzrcg5l_result.png');
 }
 
 #trending-now .right {
-  //card-img
   @include card-img-height;
   @include bg-img('./../images/skdwb3nydewupi9oklbw_result.png','./../images/sxbzvauvpqjrz5vqj5zs_result.png');
 }
@@ -172,97 +164,140 @@ button {
 #trending-now {
   .card {
     padding-bottom: $gutter*1rem;
+    &-overlay {
+      @include screen-only(md) {
+        padding: 3%;
+      }
+    }
   }
 }
 
 #best-seller {
-  .card-overlay {
-    padding: 3rem 2rem;
-    @include screen-only(md) {
-      padding: 1rem;
-    }
-  }
   .card {
     padding-bottom: $gutter*1rem;
-  }
-  img {
-    height: 100%;
-    @include screen-only(lg) {
-      max-height: 38rem;
+    &-img {
+      height: 100%;
+      @include screen-only(lg) {
+        max-height: 38rem;
+      }
+    }
+    &-overlay {
+      @include screen-only(sm) {
+        padding: 2rem 1rem;
+      }
+      @include screen-between(md,lg) {
+        padding: 5% 2.5%;
+      }
     }
   }
-}
-
-#best-seller .card-img {
-  height: 100%;
-
-  @include screen-only(sm) {
-    // padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
-}
-
-#trend-bottom img {
-  width: 100%;
 }
 
 #top-picks {
   .card-group {
-    @include overflow-calculator(6, 340/18);
+    @include overflow-calculator(6, $overflow-img-minw);
 
     .card {
-      min-width: 340/18*1rem;
+      min-width: $overflow-img-minw*1rem;
     }
   }
 }
 
 #trend-bottom {
   .card-group {
-    @include overflow-calculator(8,340/18);
+    @include overflow-calculator(8,$overflow-img-minw);
+
     .card {
-      min-width: 340/18*1rem;
+      min-width: $overflow-img-minw*1rem;
+    }
+  }
+  img {
+    width: 100%;
+  }
+}
+
+header {
+  height: $header-size-sm*1rem;
+
+  @include screen-only(lg) {
+    height: $header-size-lg*1rem;
+  }
+}
+
+#top-navbar {
+  .logo {
+    width: 0.7rem;
+  }
+  .left {
+    li {
+      padding: 0;
+    }
+    a {
+      display: block;
+      padding: ($header-size-lg-top/2+(-0.3))*1rem 1rem
+                ($header-size-lg-top/2+(-0.7))*1rem;
+      border-right: $border-gray;
+    }
+  }
+  .right {
+    li:hover {
+      border-bottom: $border-thick;
     }
   }
 }
 
-#top-navbar-left {
-  li {
-    border-right: $border-gray;
-  }
-}
-
-#top-navbar-right {
-  li:hover {
-    border-bottom: $border-thick;
-  }
-}
-
 #second-navbar {
-  padding: 0 1.2rem;
-
-  img {
-    height: 1.4rem;
+  height: $header-size-sm*1rem;
+  padding: 0.5rem 0.8rem 0;
+  @include screen-only(lg) {
+    height: $header-size-lg-bottom*1rem;
+    padding: 0 1.2rem;
   }
+}
 
+.mid-list {
   li {
-    padding: 1.3rem 1rem;
+    padding: 0;
+  }
+  a {
+    padding: ($header-size-lg-bottom/2+(-0.8))*1rem 1rem;
 
     &:hover {
       border-bottom: $border-thick;
     }
   }
+}
 
-  input {
-    height: 2.8rem;
-    width: 12rem;
-    padding: 0.3rem;
+.search input {
+  height: 2.5rem;
+  width: 12rem;
+  padding-left: 0.3rem;
+  &:focus {
+    width: 15rem;
+  }
+}
+
+.nike-logo {
+  height: 1rem;
+  @include screen-only(lg) {
+    height: 1.4rem;
   }
 }
 
 #message-bar {
-  padding-top: $header-size-md * 1rem;
+  padding-top: $header-size-sm * 1rem;
 
   @include screen-only(lg) {
     padding-top: $header-size-lg * 1rem;
+  }
+}
+
+footer li {
+  padding: $list-py*1rem $list-px*1rem;
+}
+
+#site-help,
+#site-about {
+  .title {
+    padding: $list-py*1rem $list-px*1rem;
   }
 }

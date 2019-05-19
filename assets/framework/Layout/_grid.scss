@@ -1,9 +1,11 @@
 
 @import "gutter";
+$column-n: 12;
 
 .row {
   margin-left: -$gutter*1rem;
   margin-right: -$gutter*1rem;
+  box-sizing: content-box;
 }
 
 [class*=col-] {
@@ -18,18 +20,26 @@
   }
 }
 
-@for $i from 1 through 12 {
-  .col-#{$i} {
-    width: 100*$i/12*1%;
-  }
-  .col-md-#{$i} {
-    @include screen-only(md) {
-      width: 100*$i/12*1%;
+@mixin column-generator($screen) {
+  $n: $column-n;
+  @if $screen == sm {
+    @for $i from 1 through $n {
+      .col-#{$i} {
+        width: 100*$i/$column-n*1%;
+      }
     }
   }
-  .col-lg-#{$i} {
-    @include screen-only(lg) {
-      width: 100*$i/12*1%;
+  @else {
+    @for $i from 1 through $n {
+      .col-#{$screen}-#{$i} {
+        @include screen-only($screen) {
+          width: 100*$i/$column-n*1%;
+        }
+      }
     }
   }
+}
+
+@for $i from 0 to length($screen) {
+  @include column-generator(#{nth($screen,$i+1)});
 }
