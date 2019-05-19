@@ -1,15 +1,15 @@
-$display-style: "flex",
-"block",
-"none";
+$display-style: "flex", "block", "none";
 
 @mixin display-generator($size) {
-  @for $i from 0 to length($display-style) {
-    @if $size==sm {
+  @if $size==sm {
+    @for $i from 0 to length($display-style) {
       .d-#{nth($display-style,$i+1)} {
         display: #{nth($display-style,$i+1)};
       }
     }
-    @else {
+  }
+  @else {
+    @for $i from 0 to length($display-style) {
       @include screen-only($size) {
         .d-#{$size}-#{nth($display-style,$i+1)} {
           display: #{nth($display-style,$i+1)};
@@ -19,9 +19,9 @@ $display-style: "flex",
   }
 }
 
-@include display-generator(sm);
-@include display-generator(md);
-@include display-generator(lg);
+@for $i from 0 to length($screen) {
+  @include display-generator(#{nth($screen,$i+1)});
+}
 
 .flex-column {
   flex-direction: column;
@@ -49,8 +49,24 @@ $display-style: "flex",
   align-items: center;
 }
 
+.align-items-bottom {
+  align-items: flex-end;
+}
+
 .justify-content-md-start {
   @include screen-only(md) {
     justify-content: flex-start;
+  }
+}
+
+.justify-content-md-end {
+  @include screen-only(md) {
+    justify-content: flex-end;
+  }
+}
+
+.justify-content-lg-center {
+  @include screen-only(lg) {
+    justify-content: center;
   }
 }

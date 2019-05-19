@@ -1,5 +1,6 @@
-@mixin screen-only($val) {
+$screen: "sm","md","lg";
 
+@mixin screen-only($val) {
   @if $val==sm {
     @media (max-width: 647.9px) {
       @content;
