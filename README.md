@@ -14,7 +14,7 @@
 
 ## Demo version
 
-- [Project Demo](https://shjang7.github.io/clone-nike/index.html)
+- [Project Demo](https://shjang7.github.io/clone-nike)
 
 ## Explanation
 
