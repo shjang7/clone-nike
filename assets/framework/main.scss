@@ -55,12 +55,12 @@ body {
 main {
   max-width: 100rem;
   padding: 0 1rem 1rem;
+  margin: 0 auto;
   @include screen-only(md) {
     padding: 0 1rem 2rem;
   }
   @include screen-only(lg) {
     padding: 0 2rem 4rem;
-    margin: 0 auto;
   }
 }
 
